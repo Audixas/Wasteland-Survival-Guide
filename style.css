@@ -14,8 +14,8 @@ body {
   font-size: 1.8rem;
   line-height: 1.618;
   margin: auto;
-  color: #d9d8dc;
-  background-color: #120c0e;
+  color: #d6dbd8;
+  background-color: #0d110b;
   padding: 13px; }
 
 @media (max-width: 684px) {
@@ -67,13 +67,13 @@ small, sub, sup {
   font-size: 75%; }
 
 hr {
-  border-color: #eb99a1; }
+  border-color: #a0ea98; }
 
 a {
   text-decoration: none;
-  color: #eb99a1; }
+  color: #a0ea98; }
   a:hover {
-    color: #DA4453;
+    color: #52d843;
     border-bottom: 2px solid #d9d8dc; }
 
 ul {
@@ -91,13 +91,21 @@ blockquote {
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   padding-right: 0.8em;
-  border-left: 5px solid #eb99a1;
+  border-left: 5px solid #a0ea98;
   margin-bottom: 2.5rem;
-  background-color: #40363a; }
+  background-color: #393f35; }
   
-  blockquote.info {
-  border-left: 5px solid #edf8fc;
-  background-color: #35393f ; }
+blockquote.blue {
+border-left: 5px solid #98a0ea;
+background-color: #35393f ; }
+
+blockquote.red {
+border-left: 5px solid #ea98a0;
+background-color: #3f3539 ; }
+
+blockquote.yellow {
+border-left: 5px solid #e5ea98;
+background-color: #3f3b35  ; }
 
 blockquote p {
   margin-bottom: 0; }
@@ -110,8 +118,9 @@ img {
   
  img.screenshot {
   display: inline-block;
+  opacity: 0.8;
   height: auto;
-  max-width: 30rem;
+  max-width: 40rem;
   margin: 2rem;
   }
 
@@ -172,7 +181,7 @@ textarea {
   white-space: nowrap;
   background-color: #f7f8f9;
   color: #120c0e;
-  border-radius: 3px;
+  border-radius: 4px;
   border: 1px solid #e3f6fc;
   cursor: pointer;
   box-sizing: border-box; }
