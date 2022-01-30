@@ -1,5 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+	<!-- 
+MIT License
+
+Copyright (c) 2021 VivaNewVegas
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
 <meta charset="UTF-8">
 <title>Wasteland Survival Guide</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -31,13 +54,15 @@
 
 <!-- QOLORE CONTENT STARTS HERE -->
 
-<blockquote>
-	The following MO2 installation guide has been used with permission from our good friend Qolore7 who you may know from the incredible <b>Viva New Vegas</b> guide. Depending on how that goes I might have to remove all of this shit!
+<blockquote class="yellow"><i class="fas fa-heart"></i> 
+	The following MO2 installation guide has been slightly modified and used with permission from our good friend Qolore7,
+	who you may know from the incredible <a href="https://vivanewvegas.github.io/"><b>Viva New Vegas</b></a> guide.
+	For all your New Vegas modding needs, look no further than VNV, and a massive thanks to Qolore for these thorough instructions!
 </blockquote>
 
 <div>
 	<p>In this step, we will install and configure Mod Organizer 2, the best mod manager for any Bethesda game.</p>
-		<a href="#installing_mo2"><h2 id="installing_mo2">Installing Mod Organizer 2</h2></a>
+		<h3>Installing Mod Organizer 2</h2></a>
 			<ol>
 				<li>Download the <b>Mod Organizer 2</b> main file from <a href="https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files" target="_blank">here</a></li>
 				<li>Once the download has finished, run the installer</li>
@@ -46,10 +71,10 @@
 						<li>Although it doesn't technically have to be installed on the same drive as the game, it is still recommended to install on an SSD if possible</li>
 					</ul>
 			</ol>
-			<ol class="standard_ol" start="4">
+			<ol start="4">
 				<li>Click <b>Next</b> until the installer finishes</li>
 			</ol>
-		<a class="internallink" href="#config_mo2"><h2 class="subheader" id="config_mo2">Configuring Mod Organizer 2</h2></a>        
+		<h3>Configuring Mod Organizer 2</h3>       
 			<a class="internallink" href="#initial_setup"><p class="smallheader" id="initial_setup">Initial Setup</p></a>
 				<ol class="standard_ol">
 					<li>Run <b>ModOrganizer.exe</b></li>
@@ -60,12 +85,12 @@
 						<img src="./img/MO2-install-TTW.png" alt="TTW option of MO2">
 					<li>On the next page, keep the <b>Location</b> file path default</li>
 				</ol>
-				<blockquote class="blockquote">
+				<blockquote>
 					If you have MO2 installed on an SSD or a HDD with little space, you can check the <b>Show advanced options</b> box
 					and change the <b>Downloads</b> file path to a different drive with more space. This will not effect download/game performance,
 					and the downloads can be deleted after the mods have been installed.
 				</blockquote>
-				<ol class="standard_ol" start="6">
+				<ol start="6">
 					<li>On the last page, select <b>Finish</b></li>
 					<li>MO2 will launch and prompt you with a pop-up called <b>Show tutorial?</b>, in which you should select <b>No</b></li>
 					<li>From the pop-up called <b>Register?</b>, select <b>Yes</b></li>
@@ -73,17 +98,17 @@
 							<li>This pop-up will not show up if you have already registered a different instance of MO2</li>
 						</ul>
 				</ol>
-			<a class="internallink" href="#settings"><p class="smallheader" id="settings">Configuring Settings</p></a>
+			<h3>Configuring Settings</h3>
 				<ol class="standard_ol">
 					<li>If there is a plugin called <b>FalloutNV_lang.esp</b> in the right pane of Mod Organizer 2, navigate to the game's <b>Data</b> folder and delete it</li>
 						<ul>
 							<li>If you do not know what the game's <b>Data</b> folder is, read the Key Terminology section from the <a class="sublink" href="./setup.html#terms" target="_blank">Initial Setup</a> page</li>
 						</ul>
 				</ol>
-				<blockquote class="blockquote">
+				<blockquote>
 					The translation plugin must be deleted because it directly edits 1000s of records to change the language, which will cause many incompatibilities with most mods.
 				</blockquote>     
-				<ol class="standard_ol" start="2">
+				<ol start="2">
 					<li>Select the <img src="./img/mo2 settings.png" alt="mo2 settings"> button at the top of MO2 to open the settings</li>
 					<li>In the <b>Theme</b> tab, you can select a different style from the drop-down menu at the top</li>
 						<ul>
@@ -98,12 +123,12 @@
 					<li>Once you authorize it, you can close out of your browser and of the MO2 settings</li>
 					<li>Allow MO2 to restart if it asks</li>
 				</ol>
-				<blockquote class="blockquote">
+				<blockquote>
 					If at any point you get a pop-up called <b>INI file is read-only</b>,
 					select <b>Remember my choice</b> from the drop-down at the bottom
 					then click <b>Clear the read-only flag</b> 
 				</blockquote>
-		<a class="internallink" href="#profiles"><h2 class="subheader" id="profiles">Creating Profiles</h2></a>
+		<h3>Creating Profiles</h3>
 			<p class="subparagraph">
 				Mod Organizer 2's "Profiles" feature allows for easy switching between different mod configurations. In this step, we will setup a testing profile and a main profile. 
 				The default profile will stay completely untouched and act as a backup. The testing profile will be configured the same as the main profile for the guide, 
@@ -175,7 +200,7 @@ SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textu
 					already in the guide.
 				</p>
 		<a class="internallink" href="#advice"><h2 class="subheader" id="advice">Mod Installation Advice</h2></a>
-			<blockquote class="blockquote">
+			<blockquote>
 				If you are completely unfamiliar with Mod Organizer 2, I recommended watching <a href="https://www.youtube.com/watch?v=7v0wWVuOagA" target="_blank">GamerPoet's video</a> about mod installation in MO2. 
 				As it was made for Skyrim, it has some information that does not apply to New Vegas, such as the Steam Workshop part which you can just ignore.
 				However, the rest of the information about downloading/installing mods from Nexus still applies.

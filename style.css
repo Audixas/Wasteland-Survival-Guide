@@ -3,7 +3,7 @@ html {
      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
  body {
-     max-width: 75%;
+     max-width: 60%;
      font-size: 1.8rem;
      line-height: 1.618;
      margin: auto;
@@ -112,19 +112,6 @@ html {
      margin-top: 0px;
      margin-bottom: 2.5rem;
 }
- img.screenshot {
-     display: inline-block;
-     opacity: 0.8;
-     height: auto;
-     max-width: 40rem;
-     margin: 2rem;
-}
- img.screenshot:hover {
-     opacity: 1.0;
-     border: 5px ridged white;
-     cursor: zoom-in;
-     text-decoration: none;
-}
  a:hover {
      text-decoration: none;
 }
@@ -204,7 +191,7 @@ html {
      padding: 6px 10px;
     /* The 6px vertically centers text on FF, ignored by Webkit */
      margin-bottom: 10px;
-     background-color: #40363a;
+     background-color: #393F35;
      border: 1px solid #40363a;
      border-radius: 4px;
      box-shadow: none;
@@ -222,6 +209,11 @@ html {
      margin-bottom: .5rem;
      font-weight: 600;
 }
+
+abbr {
+    cursor: help;
+}
+
 /* The side navigation menu */
  .sidebar {
      margin: 0;
