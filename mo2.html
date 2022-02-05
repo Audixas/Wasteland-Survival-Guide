@@ -75,8 +75,8 @@ SOFTWARE.
 				<li>Click <b>Next</b> until the installer finishes</li>
 			</ol>
 		<h3>Configuring Mod Organizer 2</h3>       
-			<a class="internallink" href="#initial_setup"><p class="smallheader" id="initial_setup">Initial Setup</p></a>
-				<ol class="standard_ol">
+			<h3>Initial Setup</h3>
+				<ol>
 					<li>Run <b>ModOrganizer.exe</b></li>
 					<li>You will be prompted with a pop-up called <b>Creating an instance</b>, in which you should just select <b>Next</b></li>
 					<li>On the next page, select <b>Create a portable instance</b></li>
@@ -99,7 +99,7 @@ SOFTWARE.
 						</ul>
 				</ol>
 			<h3>Configuring Settings</h3>
-				<ol class="standard_ol">
+				<ol>
 					<li>If there is a plugin called <b>FalloutNV_lang.esp</b> in the right pane of Mod Organizer 2, navigate to the game's <b>Data</b> folder and delete it</li>
 						<ul>
 							<li>If you do not know what the game's <b>Data</b> folder is, read the Key Terminology section from the <a class="sublink" href="./setup.html#terms" target="_blank">Initial Setup</a> page</li>
@@ -112,7 +112,8 @@ SOFTWARE.
 					<li>Select the <img src="./img/mo2 settings.png" alt="mo2 settings"> button at the top of MO2 to open the settings</li>
 					<li>In the <b>Theme</b> tab, you can select a different style from the drop-down menu at the top</li>
 						<ul>
-							<li>I use the <b>vs15 Dark</b> theme</li>
+							<li>The Many: I use the <b>dracula</b> theme.</li>
+							<li>Audixas: I use <b>vs15 Dark-Green</b> for TTW.</li>
 						</ul>
 					<li>In the <b>Nexus</b> tab, select <b>Connect to Nexus</b></li>
 						<img src="./img/mo2 connect.png" alt="connect to nexus">
@@ -128,34 +129,31 @@ SOFTWARE.
 					select <b>Remember my choice</b> from the drop-down at the bottom
 					then click <b>Clear the read-only flag</b> 
 				</blockquote>
-		<h3>Creating Profiles</h3>
-			<p class="subparagraph">
+		<h3> Creating Profiles</h3>
+			<p>
 				Mod Organizer 2's "Profiles" feature allows for easy switching between different mod configurations. In this step, we will setup a testing profile and a main profile. 
 				The default profile will stay completely untouched and act as a backup. The testing profile will be configured the same as the main profile for the guide, 
 				but will have all mods unchecked, allowing you to only activate certain mods for easy testing/troubleshooting. And finally, the main profile is where we will install and enable all of our mods. 
 				Profiles can be selected via the drop-down menu above the left pane
 			</p>
 			<br>
-			<ol class="standard_ol">
+			<ol>
 				<li>Select the <img src="./img/mo2 profiles.png" alt="mo2 profiles"> button at the top of MO2 to open the profiles menu</li>
 				<li>Select the <b>Default</b> profile, then select <b>Copy</b></li>
-				<li>Name the new profile <b>Testing</b></li>
-				<li>Select the <b>Testing</b> profile and make sure both <b>Use profile-specific Game INI Files</b> and <b>Automatic Archive Invalidation</b> are checked at the bottom</li>
-				<li>With the <b>Testing</b> profile selected, select <b>Copy</b></li>
-				<li>Name the new profile <b>The Best of Times</b></li>
-				<li>Exit out of the profiles menu and select the <b>The Best of Times</b> profile from the drop-down above the left pane</li>
+				<li>Name the new profile <b>Wasteland Survival Guide</b></li>
+				<li>Select the <b>Wasteland Survival Guide</b> profile you just made and make sure both <b>Use profile-specific Game INI Files</b> and <b>Automatic Archive Invalidation</b> are checked at the bottom</li>
 					<img src="./img/mo2 profile select.png" alt="profile select">
 			</ol>
-		<a class="internallink" href="#ini_tweaks"><h2 class="subheader" id="ini_tweaks">INI Tweaks</h2></a>
-			<a class="internallink" href="#custom_ini"><p class="smallheader" id="custom_ini">Tweaking FalloutCustom.ini</p></a>
-				<p class="subparagraph">
+		<h3><i class="fas fa-paste"></i> INI Tweaks</h3>
+			<h4>Tweaking FalloutCustom.ini</h4>
+				<p>
 					In this step, we will configure the game's INI files to increase performance/stability.
 					We will take advantage of JIP LN NVSE's FalloutCustom.ini feature to make our changes,
 					which allows for INI changes to be made safely without editing the default INIs. Because of this, these changes will not take affect until you install 
 					JIP LN NVSE in the <a href="./utilities.html#jip" target="_blank">Utilities</a> step.
 				</p>
 				<br>
-				<ol class="standard_ol">
+				<ol>
 					<li>Make sure the <b>The Best of Times</b> profile is active</li>
 					<li>Click the <img src="./img/mo2 ini.png" alt="mo2 ini button"> button at the top of MO2 and select <b>INI Editor</b></li>
 					<li>Select the <b>FalloutCustom.ini</b> tab, which should be blank</li>
@@ -193,19 +191,19 @@ SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textu
 						</ul>
 					<li>Repeat the INI changes on the <b>Testing</b> profile</li>
 				</ol>
-			<a class="internallink" href="#ini_notes"><p class="smallheader" id="ini_notes">Notes</p></a>
-				<p class="subparagraph">
+			<h5>Notes</h5>
+				<p>
 					It is highly recommended to avoid changing any other INI settings not in the guide, and to avoid using INI "optimization" tools like BethINI.
 					The changes these will make are placebo at best and dangerous at worst. You will realistically not need any other tweaks than the ones
 					already in the guide.
 				</p>
-		<a class="internallink" href="#advice"><h2 class="subheader" id="advice">Mod Installation Advice</h2></a>
+		<h3>Mod Installation Advice</h3>
 			<blockquote>
 				If you are completely unfamiliar with Mod Organizer 2, I recommended watching <a href="https://www.youtube.com/watch?v=7v0wWVuOagA" target="_blank">GamerPoet's video</a> about mod installation in MO2. 
 				As it was made for Skyrim, it has some information that does not apply to New Vegas, such as the Steam Workshop part which you can just ignore.
 				However, the rest of the information about downloading/installing mods from Nexus still applies.
 			</blockquote>
-			<p class="subparagraph">
+			<p>
 				When the guide says to install a mod, it will be formatted as follows: <b>Main File - Example Mod 1.5</b>. This is referring to the mod's category on Nexus, the file name, and the file version.
 					<br> <br>
 					<img style="width:85%;" src="./img/download example.png" alt="download example"> <br> <br>
@@ -214,21 +212,21 @@ SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textu
 				will be hosted on a site other than Nexus. If that is the case, do the following: 
 			</p>
 			<br>
-			<ol class="standard_ol">
+			<ol>
 				<li>Click the <b>Manual Download</b> button (or whatever the download button is for the respective site)</li>
 				<li>Once the download has finished, click the <img src="./img/mo2 archive.png" alt="mo2 archive button"> button at the top of MO2</li>
 				<li>From the new window, navigate to where the file was downloaded to and double-click it</li>
 				<li>Finish the install normally</li>
 			</ol>
 			<br>
-			<p class="subparagraph">
+			<p>
 				When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer 2 with the options <b>Merge</b>, <b>Replace</b>, and <b>Rename</b>.
 				You should select the <b>Rename</b> option and rename the mod to its respective file name. This will make MO2 install them as separate files for easier management.
 				If you are updating from an old version of a mod, you should select <b>Replace</b>. This will delete all the files from the old version of the mod and replace them,with the ones from the new version.
 				This is the only time you should use the <b>Replace</b> option, otherwise always use <b>Rename</b>.
 			</p>
 			<br>
-			<p class="subparagraph">
+			<p>
 				If at any point during mod installation you get a message called <b>Extract BSA</b>, select <b>No</b>
 			</p>
 		
