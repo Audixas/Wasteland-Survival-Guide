@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<!-- 
+<!-- 
 MIT License
 
 Copyright (c) 2021 VivaNewVegas
@@ -31,19 +31,20 @@ SOFTWARE.
 </style>
 <script src="https://kit.fontawesome.com/a83e24dd8d.js" crossorigin="anonymous"></script>
 <body>
-<div class="sidebar">
-  <a href="./index.html">Home</a>
-  <a class="active" href="./mo2.html">MO2</a>
-  <a href="./ttw.html">TTW Installation</a>
-  <a href="./utilities.html">Utilities</a>
-  <a href="./bugfix.html">Bugfix & QoL</a>
-  <a href="./ui.html">UI & HUD</a>
-  <a href="./gameplay.html">Gameplay</a>
-  <a href="./visuals.html">Visuals</a>
-  <a href="./weapons.html">Weapons & Anim.</a>
-  <a href="./homes.html">Player Homes</a>
-  <a href="./finish.html">Final Steps</a>
-</div>
+    <!-- The sidebar -->
+    <div class="sidebar">
+        <a href="./index.html" class="active">      Intro</a>
+        <a href="./mo2.html">                       MO2 Setup</a>
+        <a href="./ttw.html">                       TTW Setup</a>
+        <a href="./utilities.html">                 Utilities</a>
+        <a href="./bugfix.html">                    Bugs/QoL</a>
+        <a href="./gameplay.html">                  Gameplay</a>
+        <a href="./ui.html">                        HUD/UI</a>
+        <a href="./homes.html">                     Housing</a>
+        <a href="./visuals.html">                   Visuals</a>
+        <a href="./weapons.html">                   Weapons</a>
+        <a href="./finish.html">                    Finish</a>
+    </div>
 <header>
 <a href="./index.html"><h1><i class="fas fa-map"></i> Wasteland Survival Guide</h1></a>
 </header>
@@ -62,7 +63,7 @@ SOFTWARE.
 
 <div>
 	<p>In this step, we will install and configure Mod Organizer 2, the best mod manager for any Bethesda game.</p>
-		<h3>Installing Mod Organizer 2</h2></a>
+		<h4>Installing Mod Organizer 2</h4></a>
 			<ol>
 				<li>Download the <b>Mod Organizer 2</b> main file from <a href="https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files" target="_blank">here</a></li>
 				<li>Once the download has finished, run the installer</li>
@@ -74,8 +75,8 @@ SOFTWARE.
 			<ol start="4">
 				<li>Click <b>Next</b> until the installer finishes</li>
 			</ol>
-		<h3>Configuring Mod Organizer 2</h3>       
-			<h3>Initial Setup</h3>
+		<h4>Configuring Mod Organizer 2</h4>       
+			<h5>Initial Setup</h5>
 				<ol>
 					<li>Run <b>ModOrganizer.exe</b></li>
 					<li>You will be prompted with a pop-up called <b>Creating an instance</b>, in which you should just select <b>Next</b></li>
@@ -98,7 +99,7 @@ SOFTWARE.
 							<li>This pop-up will not show up if you have already registered a different instance of MO2</li>
 						</ul>
 				</ol>
-			<h3>Configuring Settings</h3>
+			<h4>Configuring Settings</h4>
 				<ol>
 					<li>If there is a plugin called <b>FalloutNV_lang.esp</b> in the right pane of Mod Organizer 2, navigate to the game's <b>Data</b> folder and delete it</li>
 						<ul>
@@ -129,23 +130,9 @@ SOFTWARE.
 					select <b>Remember my choice</b> from the drop-down at the bottom
 					then click <b>Clear the read-only flag</b> 
 				</blockquote>
-		<h3> Creating Profiles</h3>
-			<p>
-				Mod Organizer 2's "Profiles" feature allows for easy switching between different mod configurations. In this step, we will setup a testing profile and a main profile. 
-				The default profile will stay completely untouched and act as a backup. The testing profile will be configured the same as the main profile for the guide, 
-				but will have all mods unchecked, allowing you to only activate certain mods for easy testing/troubleshooting. And finally, the main profile is where we will install and enable all of our mods. 
-				Profiles can be selected via the drop-down menu above the left pane
-			</p>
-			<br>
-			<ol>
-				<li>Select the <img src="./img/mo2 profiles.png" alt="mo2 profiles"> button at the top of MO2 to open the profiles menu</li>
-				<li>Select the <b>Default</b> profile, then select <b>Copy</b></li>
-				<li>Name the new profile <b>Wasteland Survival Guide</b></li>
-				<li>Select the <b>Wasteland Survival Guide</b> profile you just made and make sure both <b>Use profile-specific Game INI Files</b> and <b>Automatic Archive Invalidation</b> are checked at the bottom</li>
-					<img src="./img/mo2 profile select.png" alt="profile select">
-			</ol>
+
 		<h3><i class="fas fa-paste"></i> INI Tweaks</h3>
-			<h4>Tweaking FalloutCustom.ini</h4>
+			<h5>Tweaking FalloutCustom.ini</h5>
 				<p>
 					In this step, we will configure the game's INI files to increase performance/stability.
 					We will take advantage of JIP LN NVSE's FalloutCustom.ini feature to make our changes,
@@ -162,7 +149,7 @@ SOFTWARE.
 						</ul>
 					<li>Paste in the following:</li>
 						<ul>
-					<textarea readonly="readonly" style="height: 60rem" onclick="this.focus();this.select()">
+<textarea readonly="readonly" style="height: 60rem" onclick="this.focus();this.select()">
 [General]
 bUseThreadedAI=1
 iNumHWThreads=2
@@ -187,7 +174,7 @@ iMaxSizeForCachedSound=1024
 
 [Archive]
 SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textures2.bsa, Fallout - Meshes.bsa, Fallout - Meshes2.bsa, Fallout - Voices1.bsa, Fallout - Sound.bsa, Fallout - Misc.bsa
-					</textarea>
+</textarea>
 						</ul>
 					<li>Repeat the INI changes on the <b>Testing</b> profile</li>
 				</ol>
@@ -197,7 +184,7 @@ SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textu
 					The changes these will make are placebo at best and dangerous at worst. You will realistically not need any other tweaks than the ones
 					already in the guide.
 				</p>
-		<h3>Mod Installation Advice</h3>
+		<h4>Mod Installation Advice</h4>
 			<blockquote>
 				If you are completely unfamiliar with Mod Organizer 2, I recommended watching <a href="https://www.youtube.com/watch?v=7v0wWVuOagA" target="_blank">GamerPoet's video</a> about mod installation in MO2. 
 				As it was made for Skyrim, it has some information that does not apply to New Vegas, such as the Steam Workshop part which you can just ignore.

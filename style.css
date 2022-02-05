@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Special+Elite&display=swap');
+
+@font-face {
+    font-family: 'monofontoregular';
+    src: url('./css/monofonto-webfont.woff2') format('woff2'),
+         url('./css/monofonto-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html {
      font-size: 62.5%;
-     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     
 }
  body {
      max-width: 60%;
@@ -22,9 +34,9 @@ html {
     }
 }
  h1, h2, h3, h4, h5, h5 {
-     line-height: 1.1;
-     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-     font-weight: 700;
+     font-family: 'Monofonto';
+     line-height: 1.0;
+     font-weight: 400;
      margin-top: 3rem;
      margin-bottom: 1.5rem;
      overflow-wrap: break-word;
@@ -37,22 +49,24 @@ html {
      hyphens: auto;
 }
  h1 {
-     font-size: 2.35em;
+    font-size: 6rem;
+    font-family: 'Special Elite', cursive;
+    text-transform: uppercase;
 }
  h2 {
-     font-size: 2.00em;
+     font-size: 4rem;
 }
  h3 {
-     font-size: 1.75em;
+     font-size: 3.5rem;
 }
  h4 {
-     font-size: 1.5em;
+     font-size: 3rem;
 }
  h5 {
-     font-size: 1.25em;
+     font-size: 2.5rem;
 }
  h5 {
-     font-size: 1em;
+     font-size: 2rem;
 }
  p {
      margin-top: 0px;
@@ -69,7 +83,7 @@ html {
      color: #a0ea98;
 }
  a:hover {
-     color: #52d843;
+    color:rgb(190, 255, 190);
 }
  ul {
      padding-left: 1.4em;
@@ -150,7 +164,6 @@ html {
      text-decoration: bold;
      color:#A0EA98;
      font-size: 2.2rem;
-     font-family: 'JetBrains Mono', monospace;
 }
 /* Buttons, forms and input */
  input, textarea {
@@ -217,15 +230,12 @@ abbr {
     cursor: help;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
-
 /* The side navigation menu */
  .sidebar {
-     margin: 0;
-     top: 0;
-     right: 0;
-     padding: 0;
-     width: 200px;
+     top: 1rem;
+     left: 1rem;
+     width: auto;
+
      position: fixed;
      height: 100%;
      overflow: auto;
@@ -233,10 +243,12 @@ abbr {
 /* Sidebar links */
  .sidebar a {
      display: block;
+     font-size: 2.5rem;
+     padding: 0 1rem 0 1rem;
+     line-height: 1.6;
      color: #A0EA98;
-     padding: 16px;
      text-decoration: none;
-     font-family: 'JetBrains Mono', monospace;
+     font-family: 'monofontoregular';
 }
 /* Active/current link */
  .sidebar a.active {
@@ -245,7 +257,9 @@ abbr {
 }
 /* Links on mouse-over */
  .sidebar a:hover:not(.active) {
-     background-color: #393F35;
+     background-color: rgb(37, 49, 37);
+     outline:rgb(190, 255, 190) solid 1px;
+     outline-offset: -3px;
 }
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
  div.content {
@@ -279,9 +293,11 @@ abbr {
 	padding-bottom: 5rem;
 	display: table;
 	max-width: 100%;
-    line-height: 0.8;
-	font-size: 4rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 4.5rem;
+    line-height: 1.3;
+    color: #A0EA98;
+    text-decoration: none;
+    font-family: 'monofontoregular';
     font-weight: 700;
     overflow-wrap: break-word;
     word-wrap: break-word;
