@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- 
+  <!-- 
 MIT License
 
 Copyright (c) 2021 VivaNewVegas
@@ -23,128 +23,132 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 -->
-<meta charset="UTF-8">
-<title>Wasteland Survival Guide</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="./style.css" type="text/css">
-<style>
-</style>
-<script src="https://kit.fontawesome.com/a83e24dd8d.js" crossorigin="anonymous"></script>
-<body>
+  <meta charset="UTF-8">
+  <title>Wasteland Survival Guide</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="./style.css" type="text/css">
+  <style>
+  </style>
+  <script src="https://kit.fontawesome.com/a83e24dd8d.js" crossorigin="anonymous"></script>
+
+  <body>
     <!-- The sidebar -->
     <div class="sidebar">
-        <a href="./index.html" class="active">      Intro</a>
-        <a href="./mo2.html">                       MO2 Setup</a>
-        <a href="./ttw.html">                       TTW Setup</a>
-        <a href="./utilities.html">                 Utilities</a>
-        <a href="./bugfix.html">                    Bugs/QoL</a>
-        <a href="./gameplay.html">                  Gameplay</a>
-        <a href="./ui.html">                        HUD/UI</a>
-        <a href="./homes.html">                     Housing</a>
-        <a href="./visuals.html">                   Visuals</a>
-        <a href="./weapons.html">                   Weapons</a>
-        <a href="./finish.html">                    Finish</a>
+      <a href="./index.html"> Intro</a>
+      <a href="./mo2.html"> MO2 Setup</a>
+      <a href="./ttw.html" class="active"> TTW Setup</a>
+      <a href="./utilities.html"> Essentials</a>
+      <a href="./bugfix.html"> Bugs/QoL</a>
+      <a href="./gameplay.html"> Gameplay</a>
+      <a href="./ui.html"> HUD/UI</a>
+      <a href="./homes.html"> Housing</a>
+      <a href="./visuals.html"> Visuals</a>
+      <a href="./weapons.html"> Weapons</a>
+      <a href="./finish.html"> Finish</a>
     </div>
-<header>
-<a href="./index.html"><h1><i class="fas fa-map"></i> Wasteland Survival Guide</h1></a>
-</header>
+    <header>
+      <a href="./index.html">
+        <h1><i class="fas fa-book-dead"></i> Wasteland Survival Guide</h1>
+      </a>
+    </header>
 
-<h2><i class="fas fa-download"></i> Installing Tale of Two Wastelands</h2><hr>
-<blockquote class="yellow"><i class="fas fa-heart"></i> 
-	The following MO2 installation guide has been used with permission from our good friend Qolore7 who you may know from the incredible <a href="https://vivanewvegas.github.io/"><b>Viva New Vegas</b></a> guide.
-	<br>For all your New Vegas modding needs, look no further than VNV, and huge thanks Qolore for these thorough instructions!
-</blockquote>
+    <h2><i class="fas fa-download"></i> Installing Tale of Two Wastelands</h2>
+    <hr>
+    <blockquote class="yellow"><i class="fas fa-heart"></i>
+      The following TTW installation guide has been used with permission from our good friend Qolore7 who you may know from the incredible <a href="https://vivanewvegas.github.io/"><b>Viva New Vegas</b></a> guide.
+      <br>For all your (non-TTW) New Vegas modding needs, look no further than VNV, and huge thanks Qolore for these thorough instructions!
+    </blockquote>
 
-<!-- QOLORE CONTENT STARTS HERE-->
-<div>
-          <p>
-              In this step, we will install and activate Tale of Two Wastelands through Mod Organizer 2.
-          </p>
+    <!-- QOLORE CONTENT STARTS HERE-->
+    <div>
+      <p>
+        In this step, we will install and activate Tale of Two Wastelands through Mod Organizer 2.
+      </p>
 
       <h3><i class="fab fa-steam"></i></i> Downgrading Fallout 3</h3>
-          <blockquote class="red"><i class="fas fa-exclamation-triangle"></i>
-              This step is only necessary if you have Fallout 3 installed from <b>Steam</b>. If you use the GOG version, skip this subsection and continue to "Installing TTW".
-          </blockquote>
-          <ol>
-              <li>Make sure both Mod Organizer 2 and Fallout 3 are <b>closed</b>!</li>
-              <li>Download the <a href="https://cdn.discordapp.com/attachments/229685991475118093/898181596925001748/Fallout3Downgrader.7z" target="_blank">Fallout 3 Downgrader</a> file.</li>
-              <li>Extract the contents of the <strong>Fallout3Downgrader</strong> archive to the <abbr title="Steam\steamapps\common\Fallout 3 goty">Root</abbr> of Fallout 3.</li>
-              <li>Run <strong>Fallout3Downgrader.exe</strong>.</li>
-          </ol>
+      <blockquote class="red"><i class="fas fa-exclamation-triangle"></i>
+        This step is only necessary if you have Fallout 3 installed from <b>Steam</b>. If you use the GOG version, skip this subsection and continue to "Installing TTW".
+      </blockquote>
+      <ol>
+        <li>Make sure both Mod Organizer 2 and Fallout 3 are <b>closed</b>!</li>
+        <li>Download the <a href="https://cdn.discordapp.com/attachments/229685991475118093/898181596925001748/Fallout3Downgrader.7z" target="_blank">Fallout 3 Downgrader</a> file.</li>
+        <li>Extract the contents of the <strong>Fallout3Downgrader</strong> archive to the <abbr title="Steam\steamapps\common\Fallout 3 goty">Root</abbr> of Fallout 3.</li>
+        <li>Run <strong>Fallout3Downgrader.exe</strong>.</li>
+      </ol>
 
 
-          <h3><i class="fas fa-save"></i> Installing TTW</h3>
-          <blockquote>
-              If you run into any errors when installing, check the <a href="https://taleoftwowastelands.com/faq" target="_blank">FAQ</a> to see if it has the solution.
-          </blockquote>
-          <ol start="5">
-              <li>Make sure both Mod Organizer 2 and the game are closed.</li>
-              <li>From the <a href="https://taleoftwowastelands.com/dl" target="_blank">TTW Download</a> page, download the <strong>3.2 Installer</strong>, <strong>3.2.1 Incremental Update</strong>, and <strong>3.2.2 Incremental Update</strong> files.</li>
-              <li>Extract the contents of the <strong>3.2. Installer</strong> archive to a new folder called <strong>TTW Installer</strong> in a safe location <abbr title="Do not install to any folder falling under UAC such as Desktop, Documents, Downloads, Program Files, etc. Use a simple location like C:/Modding">outside of any default Windows folders.</abbr></li>
-          </ol>
-          <ol start="9">
-              <li>Extract the <b>contents</b> of both the <strong>3.2.1 Incremental Update</strong> and <strong>3.2.2 Incremental Update</strong> archives to the <b>same folder</b></li>
-              <blockquote class="red">Do not extract each update to its own individual folder. The <b>.mpi files</b> for 3.2 and both updates should all be in the same directory together with the installer itself. Refer to the example below:</blockquote>
-              <img src="./img/install-folder.png" alt="Installer directory with update files present">
-              <li>Once everything has been extracted, navigate to <code>Mod Organizer 2\mods\</code> and create a folder there named <strong>Tale of Two Wastelands</strong>.</li>
-              </ol>
-                  <blockquote>
-                      If you are unsure as to where/what your MO2 <b>Mods</b> folder is, open up MO2, select the <img style="width:2%" src="./img/mo2 folders.png" alt="mo2 folders">
-                      button at the top, and select <strong>Open Mods folder</strong>.
-                  </blockquote>
-              <ol start="11">
-              <li>Back in the <strong>TTW Installer</strong> folder, right-click the <strong>TTW Install.exe</strong> and select <strong>Run As Administrator</strong></li>
-              <li>From the pop-up, select <strong>TTW_v3.2_Full</strong> then <strong>Install</strong></li>
-                  <img src="./img/ttw select package 1.png" alt="TTW_v3.2_Full">
-              <li>In the installer, verify that the automatically set file paths for both your Fallout 3 and Fallout New Vegas installations are correct.</li>
-              <li>Set the Tale of Two Wastelands install path to the <code>Mod Organizer 2\mods\Tale of Two Wastelands</code> you created in step 5.</li>
-                <img src="./img/installPaths.png" alt="Install paths for 3.2">
-              <li>Ensure your paths look similar to the example above, then select <strong>Install</strong>.</li>
-          </ol>
-          <blockquote class="red"><i class="fas fa-exclamation-triangle"></i>
-               The install will take a very long time (can be anywhere from 2-12 hours depending on your CPU, it took 3 hours on my i5 7500). 
-              It is recommended to leave your computer be and have any CPU-intensive applications closed during this time as to not overheat your CPU and cause the TTW installation to fail.
-          </blockquote>
-          <ol start="16">
-              <li>Once the installer has finished, exit it and immediately re-run it as an administrator</li>
-              <li>This time, select <strong>TTW_v3.2_to_v3.2.1_Update</strong> then <strong>Install</strong></li>
-                  <img src="./img/ttw select package 2.png" alt="TTW_v3.2_to_v3.2.1_Update">
-              <li>In the installer, verify that the file paths for your Fallout New Vegas and Tale of Two Wastelands 3.2 installations are correct</li>
-              <li>Set the install path for Tale of Two Wastelands 3.2.1 to the same folder that you installed Tale of Two Wastelands 3.2 to (<code>Mod Organizer 2\mods\Tale of Two Wastelands</code>)</li>
-                  <img src="./img/installPaths321.png" alt="Install paths for 3.2.1">
-              <li>Select <strong>Install</strong></li>
-              <li>Once the installer has finished (should only take a few seconds), exit it and immediately re-run it as an administrator</li>
-              <li>This time, select <strong>TTW_v3.2.1_to_v3.2.2_Update</strong> then <strong>Install</strong></li>
-                  <img src="./img/ttw select package 3.png" alt="TTW_v3.2.1_to_v3.2.2_Update">
-              <li>In the installer, verify that the file paths for your Fallout New Vegas and Tale of Two Wastelands 3.2.1 installations are correct</li>
-              <li>Set the install path for Tale of Two Wastelands 3.2.2 to the same folder that you installed Tale of Two Wastelands 3.2.1 to (<code>Mod Organizer 2\mods\Tale of Two Wastelands</code>)</li>
-                  <img src="./img/installPaths322.png" alt="Install paths for 3.2.2">
-              <li>Select <strong>Install</strong>.</li>
-              <li>Once the installer has finished (should only take a few seconds), exit it.</li>
-          </ol>
+      <h3><i class="fas fa-save"></i> Installing TTW</h3>
+      <blockquote>
+        If you run into any errors when installing, check the <a href="https://taleoftwowastelands.com/faq" target="_blank">FAQ</a> to see if it has the solution.
+      </blockquote>
+      <ol start="5">
+        <li>Make sure both Mod Organizer 2 and the game are closed.</li>
+        <li>From the <a href="https://taleoftwowastelands.com/dl" target="_blank">TTW Download</a> page, download the <strong>3.2 Installer</strong>, <strong>3.2.1 Incremental Update</strong>, and <strong>3.2.2 Incremental Update</strong> files.</li>
+        <li>Extract the contents of the <strong>3.2. Installer</strong> archive to a new folder called <strong>TTW Installer</strong> in a safe location <abbr title="Do not install to any folder falling under UAC such as Desktop, Documents, Downloads, Program Files, etc. Use a simple location like C:/Modding">outside of any default Windows folders.</abbr></li>
+      </ol>
+      <ol start="9">
+        <li>Extract the <b>contents</b> of both the <strong>3.2.1 Incremental Update</strong> and <strong>3.2.2 Incremental Update</strong> archives to the <b>same folder</b></li>
+        <blockquote class="red">Do not extract each update to its own individual folder. The <b>.mpi files</b> for 3.2 and both updates should all be in the same directory together with the installer itself. Refer to the example below:</blockquote>
+        <img src="./img/install-folder.png" alt="Installer directory with update files present">
+        <li>Once everything has been extracted, navigate to <code>Mod Organizer 2\mods\</code> and create a folder there named <strong>Tale of Two Wastelands</strong>.</li>
+      </ol>
+      <blockquote>
+        If you are unsure as to where/what your MO2 <b>Mods</b> folder is, open up MO2, select the <img style="width:2%" src="./img/mo2 folders.png" alt="mo2 folders">
+        button at the top, and select <strong>Open Mods folder</strong>.
+      </blockquote>
+      <ol start="11">
+        <li>Back in the <strong>TTW Installer</strong> folder, right-click the <strong>TTW Install.exe</strong> and select <strong>Run As Administrator</strong></li>
+        <li>From the pop-up, select <strong>TTW_v3.2_Full</strong> then <strong>Install</strong></li>
+        <img src="./img/ttw select package 1.png" alt="TTW_v3.2_Full">
+        <li>In the installer, verify that the automatically set file paths for both your Fallout 3 and Fallout New Vegas installations are correct.</li>
+        <li>Set the Tale of Two Wastelands install path to the <code>Mod Organizer 2\mods\Tale of Two Wastelands</code> you created in step 5.</li>
+        <img src="./img/installPaths.png" alt="Install paths for 3.2">
+        <li>Ensure your paths look similar to the example above, then select <strong>Install</strong>.</li>
+      </ol>
+      <blockquote class="red"><i class="fas fa-exclamation-triangle"></i>
+        The install will take a very long time (can be anywhere from 2-12 hours depending on your CPU, it took 3 hours on my i5 7500).
+        It is recommended to leave your computer be and have any CPU-intensive applications closed during this time as to not overheat your CPU and cause the TTW installation to fail.
+      </blockquote>
+      <ol start="16">
+        <li>Once the installer has finished, exit it and immediately re-run it as an administrator</li>
+        <li>This time, select <strong>TTW_v3.2_to_v3.2.1_Update</strong> then <strong>Install</strong></li>
+        <img src="./img/ttw select package 2.png" alt="TTW_v3.2_to_v3.2.1_Update">
+        <li>In the installer, verify that the file paths for your Fallout New Vegas and Tale of Two Wastelands 3.2 installations are correct</li>
+        <li>Set the install path for Tale of Two Wastelands 3.2.1 to the same folder that you installed Tale of Two Wastelands 3.2 to (<code>Mod Organizer 2\mods\Tale of Two Wastelands</code>)</li>
+        <img src="./img/installPaths321.png" alt="Install paths for 3.2.1">
+        <li>Select <strong>Install</strong></li>
+        <li>Once the installer has finished (should only take a few seconds), exit it and immediately re-run it as an administrator</li>
+        <li>This time, select <strong>TTW_v3.2.1_to_v3.2.2_Update</strong> then <strong>Install</strong></li>
+        <img src="./img/ttw select package 3.png" alt="TTW_v3.2.1_to_v3.2.2_Update">
+        <li>In the installer, verify that the file paths for your Fallout New Vegas and Tale of Two Wastelands 3.2.1 installations are correct</li>
+        <li>Set the install path for Tale of Two Wastelands 3.2.2 to the same folder that you installed Tale of Two Wastelands 3.2.1 to (<code>Mod Organizer 2\mods\Tale of Two Wastelands</code>)</li>
+        <img src="./img/installPaths322.png" alt="Install paths for 3.2.2">
+        <li>Select <strong>Install</strong>.</li>
+        <li>Once the installer has finished (should only take a few seconds), exit it.</li>
+      </ol>
 
 
       <h3>Activating TTW in Mod Organizer 2</h3>
-          <ol start="27">
-              <li>Launch Mod Organizer 2</li>
-              <li>Make sure the <strong>The Best of Times</strong> profile is active</li>
-              <li>If you installed TTW correctly with the correct filepaths, you should see the <strong>Tale of Two Wastelands</strong> mod in the left pane of MO2</li>
-                  <ul>
-                      <li>If you do not see anything, you did not install TTW to the correct folder. Find out where the files were installed to and move them to <code>Mod Organizer 2\mods\Tale of Two Wastelands</code></li>
-                  </ul>
-              <li>Click the checkbox next to it in the left pane, and the right pane should fill with plugins</li>
-          </ol>
-          <blockquote class="blue"><i class="fas fa-info-circle"></i> 
-              You can now safely uninstall Fallout 3.
-          </blockquote>
-</div>
-<!-- QOLORE CONTENT ENDS HERE -->
+      <ol start="27">
+        <li>Launch Mod Organizer 2</li>
+        <li>Make sure the <strong>The Best of Times</strong> profile is active</li>
+        <li>If you installed TTW correctly with the correct filepaths, you should see the <strong>Tale of Two Wastelands</strong> mod in the left pane of MO2</li>
+        <ul>
+          <li>If you do not see anything, you did not install TTW to the correct folder. Find out where the files were installed to and move them to <code>Mod Organizer 2\mods\Tale of Two Wastelands</code></li>
+        </ul>
+        <li>Click the checkbox next to it in the left pane, and the right pane should fill with plugins</li>
+      </ol>
+      <blockquote class="blue"><i class="fas fa-info-circle"></i>
+        You can now safely uninstall Fallout 3.
+      </blockquote>
+    <!-- QOLORE CONTENT ENDS HERE -->
 
-<span class="continue"><a href="./utilities.html">Continue to Utilities <i class="fas fa-angle-double-right"></i></a></span>
+    <span class="continue"><a href="./utilities.html">Continue to Essentials <i class="fas fa-angle-double-right"></i></a></span>
 
-<hr>
-<footer>
-Guide created by Audixas and The Many, do not reproduce without permission.
-</footer>
-</body>
+    <hr>
+    <footer>
+      Guide created by Audixas and The Many, do not reproduce without permission.
+    </footer>
+  </body>
+
 </html>

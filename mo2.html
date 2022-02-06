@@ -1,155 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- 
-MIT License
 
-Copyright (c) 2021 VivaNewVegas
+  <meta charset="UTF-8">
+  <title>Wasteland Survival Guide</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="./style.css" type="text/css">
+  <style>
+  </style>
+  <script src="https://kit.fontawesome.com/a83e24dd8d.js" crossorigin="anonymous"></script>
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
--->
-<meta charset="UTF-8">
-<title>Wasteland Survival Guide</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="./style.css" type="text/css">
-<style>
-</style>
-<script src="https://kit.fontawesome.com/a83e24dd8d.js" crossorigin="anonymous"></script>
-<body>
+  <body>
     <!-- The sidebar -->
     <div class="sidebar">
-        <a href="./index.html" class="active">      Intro</a>
-        <a href="./mo2.html">                       MO2 Setup</a>
-        <a href="./ttw.html">                       TTW Setup</a>
-        <a href="./utilities.html">                 Utilities</a>
-        <a href="./bugfix.html">                    Bugs/QoL</a>
-        <a href="./gameplay.html">                  Gameplay</a>
-        <a href="./ui.html">                        HUD/UI</a>
-        <a href="./homes.html">                     Housing</a>
-        <a href="./visuals.html">                   Visuals</a>
-        <a href="./weapons.html">                   Weapons</a>
-        <a href="./finish.html">                    Finish</a>
+      <a href="./index.html">Intro</a>
+      <a href="./mo2.html" class="active">MO2 Setup</a>
+      <a href="./ttw.html">TTW Setup</a>
+      <a href="./utilities.html">Essentials</a>
+      <a href="./bugfix.html">Bugs/QoL</a>
+      <a href="./gameplay.html">Gameplay</a>
+      <a href="./ui.html">HUD/UI</a>
+      <a href="./homes.html">Housing</a>
+      <a href="./visuals.html">Visuals</a>
+      <a href="./weapons.html">Weapons</a>
+      <a href="./finish.html">Finish</a>
     </div>
-<header>
-<a href="./index.html"><h1><i class="fas fa-map"></i> Wasteland Survival Guide</h1></a>
-</header>
+    <header>
+      <a href="./index.html">
+        <h1><i class="fas fa-book-dead"></i> Wasteland Survival Guide</h1>
+      </a>
+    </header>
 
-<h2><i class="fas fa-tasks"></i> Mod Organizer 2</h2>
+    <h2><i class="fas fa-tasks"></i> Mod Organizer 2</h2>
 
-<hr>
+    <hr>
 
-<!-- QOLORE CONTENT STARTS HERE -->
+<!--QOLORE CONTENT STARTS HERE-->
+<!-- 
+	MIT License
 
-<blockquote class="yellow"><i class="fas fa-heart"></i> 
-	The following MO2 installation guide has been slightly modified and used with permission from our good friend Qolore7,
-	who you may know from the incredible <a href="https://vivanewvegas.github.io/"><b>Viva New Vegas</b></a> guide.
-	For all your New Vegas modding needs, look no further than VNV, and a massive thanks to Qolore for these thorough instructions!
-</blockquote>
+	Copyright (c) 2021 VivaNewVegas
 
-<div>
-	<p>In this step, we will install and configure Mod Organizer 2, the best mod manager for any Bethesda game.</p>
-		<h4>Installing Mod Organizer 2</h4></a>
-			<ol>
-				<li>Download the <b>Mod Organizer 2</b> main file from <a href="https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files" target="_blank">here</a></li>
-				<li>Once the download has finished, run the installer</li>
-				<li>When prompted to choose an install location, pick any location outside of any default Window folders and outside of the game's <b>Root</b> folder</li>
-					<ul>
-						<li>Although it doesn't technically have to be installed on the same drive as the game, it is still recommended to install on an SSD if possible</li>
-					</ul>
-			</ol>
-			<ol start="4">
-				<li>Click <b>Next</b> until the installer finishes</li>
-			</ol>
-		<h4>Configuring Mod Organizer 2</h4>       
-			<h5>Initial Setup</h5>
-				<ol>
-					<li>Run <b>ModOrganizer.exe</b></li>
-					<li>You will be prompted with a pop-up called <b>Creating an instance</b>, in which you should just select <b>Next</b></li>
-					<li>On the next page, select <b>Create a portable instance</b></li>
-						<img src="./img/MO2 portable.png" alt="portable instance">
-					<li>On the next page, select <b>TTW</b></li>
-						<img src="./img/MO2-install-TTW.png" alt="TTW option of MO2">
-					<li>On the next page, keep the <b>Location</b> file path default</li>
-				</ol>
-				<blockquote>
-					If you have MO2 installed on an SSD or a HDD with little space, you can check the <b>Show advanced options</b> box
-					and change the <b>Downloads</b> file path to a different drive with more space. This will not effect download/game performance,
-					and the downloads can be deleted after the mods have been installed.
-				</blockquote>
-				<ol start="6">
-					<li>On the last page, select <b>Finish</b></li>
-					<li>MO2 will launch and prompt you with a pop-up called <b>Show tutorial?</b>, in which you should select <b>No</b></li>
-					<li>From the pop-up called <b>Register?</b>, select <b>Yes</b></li>
-						<ul>
-							<li>This pop-up will not show up if you have already registered a different instance of MO2</li>
-						</ul>
-				</ol>
-			<h4>Configuring Settings</h4>
-				<ol>
-					<li>If there is a plugin called <b>FalloutNV_lang.esp</b> in the right pane of Mod Organizer 2, navigate to the game's <b>Data</b> folder and delete it</li>
-						<ul>
-							<li>If you do not know what the game's <b>Data</b> folder is, read the Key Terminology section from the <a class="sublink" href="./setup.html#terms" target="_blank">Initial Setup</a> page</li>
-						</ul>
-				</ol>
-				<blockquote>
-					The translation plugin must be deleted because it directly edits 1000s of records to change the language, which will cause many incompatibilities with most mods.
-				</blockquote>     
-				<ol start="2">
-					<li>Select the <img src="./img/mo2 settings.png" alt="mo2 settings"> button at the top of MO2 to open the settings</li>
-					<li>In the <b>Theme</b> tab, you can select a different style from the drop-down menu at the top</li>
-						<ul>
-							<li>The Many: I use the <b>dracula</b> theme.</li>
-							<li>Audixas: I use <b>vs15 Dark-Green</b> for TTW.</li>
-						</ul>
-					<li>In the <b>Nexus</b> tab, select <b>Connect to Nexus</b></li>
-						<img src="./img/mo2 connect.png" alt="connect to nexus">
-						<ul>
-							<li>This option will not show up if you have already connected your Nexus account on a different MO2 instance</li>
-						</ul>
-					<li>MO2 will open your browser and prompt you to authorize the connection</li>
-					<li>Once you authorize it, you can close out of your browser and of the MO2 settings</li>
-					<li>Allow MO2 to restart if it asks</li>
-				</ol>
-				<blockquote>
-					If at any point you get a pop-up called <b>INI file is read-only</b>,
-					select <b>Remember my choice</b> from the drop-down at the bottom
-					then click <b>Clear the read-only flag</b> 
-				</blockquote>
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
 
-		<h3><i class="fas fa-paste"></i> INI Tweaks</h3>
-			<h5>Tweaking FalloutCustom.ini</h5>
-				<p>
-					In this step, we will configure the game's INI files to increase performance/stability.
-					We will take advantage of JIP LN NVSE's FalloutCustom.ini feature to make our changes,
-					which allows for INI changes to be made safely without editing the default INIs. Because of this, these changes will not take affect until you install 
-					JIP LN NVSE in the <a href="./utilities.html#jip" target="_blank">Utilities</a> step.
-				</p>
-				<br>
-				<ol>
-					<li>Make sure the <b>The Best of Times</b> profile is active</li>
-					<li>Click the <img src="./img/mo2 ini.png" alt="mo2 ini button"> button at the top of MO2 and select <b>INI Editor</b></li>
-					<li>Select the <b>FalloutCustom.ini</b> tab, which should be blank</li>
-						<ul>
-							<li>Make sure you are in the <b>FalloutCustom.ini</b> tab and NOT the <b>Custom.ini</b> tab</li>
-						</ul>
-					<li>Paste in the following:</li>
-						<ul>
-<textarea readonly="readonly" style="height: 60rem" onclick="this.focus();this.select()">
+	The above copyright notice and this permission notice shall be included in all
+	copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	SOFTWARE.
+-->
+    <blockquote class="yellow"><i class="fas fa-heart"></i>
+      The following MO2 installation guide has been used with permission from our good friend Qolore7 who you may know from the incredible <a href="https://vivanewvegas.github.io/"><b>Viva New Vegas</b></a> guide.
+      <br>For all your (non-TTW) New Vegas modding needs, look no further than VNV, and huge thanks Qolore for these thorough instructions!
+    </blockquote>
+
+    <div>
+      <p>In this step, we will install and configure Mod Organizer 2, the best mod manager for any Bethesda game.</p>
+      <h4>Installing Mod Organizer 2</h4>
+      <ol>
+        <li>Download the <b>Mod Organizer 2</b> main file from <a href="https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files" target="_blank">here</a></li>
+        <li>Once the download has finished, run the installer</li>
+        <li>When prompted to choose an install location, pick any location outside of any default Window folders and outside of the game's <b>Root</b> folder</li>
+        <li>Although it doesn't technically have to be installed on the same drive as the game, it is still recommended to install on an SSD if possible</li>
+      </ol>
+      <ol start="4">
+        <li>Click <b>Next</b> until the installer finishes</li>
+      </ol>
+      <h4>Configuring Mod Organizer 2</h4>
+      <h5>Initial Setup</h5>
+      <ol>
+        <li>Run <b>ModOrganizer.exe</b></li>
+        <li>You will be prompted with a pop-up called <b>Creating an instance</b>, in which you should just select <b>Next</b></li>
+        <li>On the next page, select <b>Create a portable instance</b></li>
+        <img src="./img/MO2 portable.png" alt="portable instance">
+        <li>On the next page, select <b>TTW</b></li>
+        <img src="./img/MO2-install-TTW.png" alt="TTW option of MO2">
+        <li>On the next page, keep the <b>Location</b> file path default</li>
+      </ol>
+      <blockquote>
+        If you have MO2 installed on an SSD or a HDD with little space, you can check the <b>Show advanced options</b> box
+        and change the <b>Downloads</b> file path to a different drive with more space. This will not effect download/game performance,
+        and the downloads can be deleted after the mods have been installed.
+      </blockquote>
+      <ol start="6">
+        <li>On the last page, select <b>Finish</b></li>
+        <li>MO2 will launch and prompt you with a pop-up called <b>Show tutorial?</b>, in which you should select <b>No</b></li>
+        <li>From the pop-up called <b>Register?</b>, select <b>Yes</b></li>
+        <ul>
+          <li>This pop-up will not show up if you have already registered a different instance of MO2</li>
+        </ul>
+      </ol>
+      <h4>Configuring Settings</h4>
+      <ol>
+        <li>If there is a plugin called <b>FalloutNV_lang.esp</b> in the right pane of Mod Organizer 2, navigate to the game's <b>Data</b> folder and delete it</li>
+        <ul>
+          <li>If you do not know what the game's <b>Data</b> folder is, read the Key Terminology section from the <a class="sublink" href="./setup.html#terms" target="_blank">Initial Setup</a> page</li>
+        </ul>
+      </ol>
+      <blockquote>
+        The translation plugin must be deleted because it directly edits 1000s of records to change the language, which will cause many incompatibilities with most mods.
+      </blockquote>
+      <ol start="2">
+        <li>Select the <img src="./img/mo2%20settings.png" alt="mo2 settings"> button at the top of MO2 to open the settings</li>
+        <li>In the <b>Theme</b> tab, you can select a different style from the drop-down menu at the top</li>
+        <ul>
+          <li>The Many: I use the <b>dracula</b> theme.</li>
+          <li>Audixas: I use <b>vs15 Dark-Green</b> for TTW.</li>
+        </ul>
+        <li>In the <b>Nexus</b> tab, select <b>Connect to Nexus</b></li>
+        <img src="./img/mo2%20connect.png" alt="connect to nexus">
+        <ul>
+          <li>This option will not show up if you have already connected your Nexus account on a different MO2 instance</li>
+        </ul>
+        <li>MO2 will open your browser and prompt you to authorize the connection</li>
+        <li>Once you authorize it, you can close out of your browser and of the MO2 settings</li>
+        <li>Allow MO2 to restart if it asks</li>
+      </ol>
+      <blockquote>
+        If at any point you get a pop-up called <b>INI file is read-only</b>,
+        select <b>Remember my choice</b> from the drop-down at the bottom
+        then click <b>Clear the read-only flag</b>
+      </blockquote>
+
+      <h3><i class="fas fa-paste"></i> INI Tweaks</h3>
+      <h5>Tweaking FalloutCustom.ini</h5>
+      <p>
+        In this step, we will configure the game's INI files to increase performance/stability.
+        We will take advantage of JIP LN NVSE's FalloutCustom.ini feature to make our changes,
+        which allows for INI changes to be made safely without editing the default INIs. Because of this, these changes will not take affect until you install
+        JIP LN NVSE in the <a href="./utilities.html#jip" target="_blank">Essentials</a> step.
+      </p>
+      <br>
+      <ol>
+        <li>Make sure the <b>The Best of Times</b> profile is active</li>
+        <li>Click the <img src="./img/mo2%20ini.png" alt="mo2 ini button"> button at the top of MO2 and select <b>INI Editor</b></li>
+        <li>Select the <b>FalloutCustom.ini</b> tab, which should be blank</li>
+        <ul>
+          <li>Make sure you are in the <b>FalloutCustom.ini</b> tab and NOT the <b>Custom.ini</b> tab</li>
+        </ul>
+        <li>Paste in the following:</li>
+        <ul>
+          <textarea readonly="readonly" style="height: 60rem" onclick="this.focus();this.select()">
 [General]
 bUseThreadedAI=1
 iNumHWThreads=2
@@ -175,59 +175,60 @@ iMaxSizeForCachedSound=1024
 [Archive]
 SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textures2.bsa, Fallout - Meshes.bsa, Fallout - Meshes2.bsa, Fallout - Voices1.bsa, Fallout - Sound.bsa, Fallout - Misc.bsa
 </textarea>
-						</ul>
-					<li>Repeat the INI changes on the <b>Testing</b> profile</li>
-				</ol>
-			<h5>Notes</h5>
-				<p>
-					It is highly recommended to avoid changing any other INI settings not in the guide, and to avoid using INI "optimization" tools like BethINI.
-					The changes these will make are placebo at best and dangerous at worst. You will realistically not need any other tweaks than the ones
-					already in the guide.
-				</p>
-		<h4>Mod Installation Advice</h4>
-			<blockquote>
-				If you are completely unfamiliar with Mod Organizer 2, I recommended watching <a href="https://www.youtube.com/watch?v=7v0wWVuOagA" target="_blank">GamerPoet's video</a> about mod installation in MO2. 
-				As it was made for Skyrim, it has some information that does not apply to New Vegas, such as the Steam Workshop part which you can just ignore.
-				However, the rest of the information about downloading/installing mods from Nexus still applies.
-			</blockquote>
-			<p>
-				When the guide says to install a mod, it will be formatted as follows: <b>Main File - Example Mod 1.5</b>. This is referring to the mod's category on Nexus, the file name, and the file version.
-					<br> <br>
-					<img style="width:85%;" src="./img/download example.png" alt="download example"> <br> <br>
-				Unless instructed otherwise, simply download the listed file using the <b>Mod Manager Download</b> button and install it normally through MO2. 
-				If you do not know how to install mods through MO2, please watch the video linked above. Sometimes, a mod will not have a <b>Mod Manager Download</b>, or
-				will be hosted on a site other than Nexus. If that is the case, do the following: 
-			</p>
-			<br>
-			<ol>
-				<li>Click the <b>Manual Download</b> button (or whatever the download button is for the respective site)</li>
-				<li>Once the download has finished, click the <img src="./img/mo2 archive.png" alt="mo2 archive button"> button at the top of MO2</li>
-				<li>From the new window, navigate to where the file was downloaded to and double-click it</li>
-				<li>Finish the install normally</li>
-			</ol>
-			<br>
-			<p>
-				When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer 2 with the options <b>Merge</b>, <b>Replace</b>, and <b>Rename</b>.
-				You should select the <b>Rename</b> option and rename the mod to its respective file name. This will make MO2 install them as separate files for easier management.
-				If you are updating from an old version of a mod, you should select <b>Replace</b>. This will delete all the files from the old version of the mod and replace them,with the ones from the new version.
-				This is the only time you should use the <b>Replace</b> option, otherwise always use <b>Rename</b>.
-			</p>
-			<br>
-			<p>
-				If at any point during mod installation you get a message called <b>Extract BSA</b>, select <b>No</b>
-			</p>
-		
-</div>
+        </ul>
+        <li>Repeat the INI changes on the <b>Testing</b> profile</li>
+      </ol>
+      <h5>Notes</h5>
+      <p>
+        It is highly recommended to avoid changing any other INI settings not in the guide, and to avoid using INI "optimization" tools like BethINI.
+        The changes these will make are placebo at best and dangerous at worst. You will realistically not need any other tweaks than the ones
+        already in the guide.
+      </p>
+      <h4>Mod Installation Advice</h4>
+      <blockquote>
+        If you are completely unfamiliar with Mod Organizer 2, I recommended watching <a href="https://www.youtube.com/watch?v=7v0wWVuOagA" target="_blank">GamerPoet's video</a> about mod installation in MO2.
+        As it was made for Skyrim, it has some information that does not apply to New Vegas, such as the Steam Workshop part which you can just ignore.
+        However, the rest of the information about downloading/installing mods from Nexus still applies.
+      </blockquote>
+      <p>
+        When the guide says to install a mod, it will be formatted as follows: <b>Main File - Example Mod 1.5</b>. This is referring to the mod's category on Nexus, the file name, and the file version.
+        <br> <br>
+        <img style="width:85%;" src="./img/download%20example.png" alt="download example"> <br> <br>
+        Unless instructed otherwise, simply download the listed file using the <b>Mod Manager Download</b> button and install it normally through MO2.
+        If you do not know how to install mods through MO2, please watch the video linked above. Sometimes, a mod will not have a <b>Mod Manager Download</b>, or
+        will be hosted on a site other than Nexus. If that is the case, do the following:
+      </p>
+      <br>
+      <ol>
+        <li>Click the <b>Manual Download</b> button (or whatever the download button is for the respective site)</li>
+        <li>Once the download has finished, click the <img src="./img/mo2%20archive.png" alt="mo2 archive button"> button at the top of MO2</li>
+        <li>From the new window, navigate to where the file was downloaded to and double-click it</li>
+        <li>Finish the install normally</li>
+      </ol>
+      <br>
+      <p>
+        When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer 2 with the options <b>Merge</b>, <b>Replace</b>, and <b>Rename</b>.
+        You should select the <b>Rename</b> option and rename the mod to its respective file name. This will make MO2 install them as separate files for easier management.
+        If you are updating from an old version of a mod, you should select <b>Replace</b>. This will delete all the files from the old version of the mod and replace them,with the ones from the new version.
+        This is the only time you should use the <b>Replace</b> option, otherwise always use <b>Rename</b>.
+      </p>
+      <br>
+      <p>
+        If at any point during mod installation you get a message called <b>Extract BSA</b>, select <b>No</b>
+      </p>
 
-<!-- QOLORE CONTENT ENDS HERE -->
+    </div>
 
-<span class="continue"><a href="./ttw.html">Continue to TTW Installation <i class="fas fa-angle-double-right"></i></a></span>
+    <!-- QOLORE CONTENT ENDS HERE -->
+
+    <span class="continue"><a href="./ttw.html">Continue to TTW Installation <i class="fas fa-angle-double-right"></i></a></span>
 
 
-<hr>
+    <hr>
 
-<footer>
-Guide created by Audixas and The Many, do not reproduce without permission.
-</footer>
-</body>
+    <footer>
+      Guide created by Audixas and The Many, do not reproduce without permission.
+    </footer>
+  </body>
+
 </html>
