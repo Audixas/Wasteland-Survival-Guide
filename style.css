@@ -65,7 +65,7 @@ h1
 
 h2
 {
-  font-family: 'monofontoRegular';
+  font-family: 'Roboto Condensed';
   font-size: 4.5rem;
 
 }
@@ -166,8 +166,6 @@ img
 {
   height: auto;
   max-width: 100%;
-  margin-top: 0px;
-  margin-bottom: 2.5rem;
 }
 
 a:hover
@@ -404,4 +402,8 @@ abbr
 {
   background-color: rgb(37, 49, 37);
   outline: rgb(190, 255, 190) solid 4px;
+}
+
+strong {
+  color: rgb(190, 255, 190);
 }
