@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Special+Elite&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Special+Elite&display=swap');
 @font-face
 {
   font-family: 'monofontoregular';
@@ -42,9 +41,9 @@ body
   }
 }
 
-h1, h2, h3, h4, h5, h5
+h1, h2, h3, h4, h5, h6
 {
-  font-family: 'Oswald';
+  
   line-height: 1.0;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -66,12 +65,15 @@ h1
 
 h2
 {
+  font-family: 'monofontoRegular';
   font-size: 4.5rem;
 
 }
 
 h3
 {
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
   font-size: 4rem;
 }
 
@@ -328,15 +330,17 @@ abbr
 /* Active/current link */
 .sidebar a.active
 {
-  background-color: #A0EA98;
-  color: #111;
+  background-color: #a0ea9888;
+  outline: rgb(190, 255, 190) solid 2px;
+  outline-offset: -2px;
+  color: rgb(190, 255, 190);
 }
 /* Links on mouse-over */
 .sidebar a:hover:not(.active)
 {
   background-color: rgb(37, 49, 37);
-  outline: rgb(190, 255, 190) solid 1px;
-  outline-offset: -3px;
+  outline: rgb(190, 255, 190) solid 2px;
+  outline-offset: -2px;
 }
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
  div.content {
@@ -366,8 +370,8 @@ abbr
 }
  span.continue {
 	margin: 0 auto;
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	display: table;
 	max-width: 100%;
     font-size: 4.5rem;
@@ -375,7 +379,7 @@ abbr
     color: #A0EA98;
     text-decoration: none;
     font-family: 'monofontoregular';
-    font-weight: 700;
+    font-weight: 1000;
     overflow-wrap: break-word;
     word-wrap: break-word;
     -ms-word-break: break-all;
@@ -384,4 +388,20 @@ abbr
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+}
+.continue a
+{
+  display: block;
+  font-size: 5rem;
+  padding: 0 1rem 0 1rem;
+  line-height: 1.6;
+  color: #A0EA98;
+  text-decoration: none;
+  font-family: 'monofontoregular';
+}
+/* Active/current link */
+.continue a:hover
+{
+  background-color: rgb(37, 49, 37);
+  outline: rgb(190, 255, 190) solid 4px;
 }
