@@ -16,10 +16,11 @@ html
 
 body
 {
-  max-width: 60%;
+  max-width: 80%;
   font-size: 1.8rem;
   line-height: 1.618;
-  margin: auto;
+  margin-left: auto;
+  margin-right: 5%;
   color: #d6dbd8;
   background-color: #0d110b;
   padding: 13px;
@@ -104,9 +105,14 @@ hr
 
 a
 {
-  text-decoration: none;
   color: #a0ea98;
 }
+
+header a
+{
+  text-decoration: none;
+}
+
 
 a:hover
 {
@@ -168,10 +174,7 @@ img
   max-width: 100%;
 }
 
-a:hover
-{
-  text-decoration: none;
-}
+
 /* Pre and Code */
 pre
 {
