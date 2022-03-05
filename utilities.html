@@ -33,7 +33,6 @@
     <hr>
     <h3>First, create a "Utilities" <a href="./img/mo2%20separator.png" target="new">separator</a> in MO2. </h3>
     <p>As you install the mods from this section, organize them underneath this separator.</p>
-    <br>
     <blockquote class="red">
       <i class="fas fa-exclamation-triangle"></i> All of the mods in this section are absolutely <b>essential</b> for TTW to function! Many mods in the following sections are optional, but make sure to get every Utility listed - they are all hard requirements.
     </blockquote>
@@ -132,18 +131,18 @@
 		  <br><br><img src="./img/nvhr.png" alt="nvhr command prompt" style="float: right">
         </td>
 		<td>
-        <ul>
+    <ol>
 			<li>Download the <strong>Main File - NVHR 3.2</strong> using the <strong>Manual Download</strong> button</li>
 			<li>From the downloaded archive, run the <strong>cpu_info.exe</strong></li>
 			<li>A command prompt will tell you which version of the mod to use</li>
-		</ul>
+		</ol>
 		<blockquote class="blockquote">
 			Pay attention to the line that says <b>=> Use <=</b>. For me it says <strong>AVX2</strong>, but it may be different for you.
 		</blockquote>
-		<ul>
+		<ol start="4">
 		  <li>Back in the downloaded archive, open the folder's which name corresponds to the version that the command prompt told you to use</li>
 		  <li>From that folder, extract the <strong>d3dx9_38.dll</strong> to the game's <strong>Root</strong> folder</li>
-        </ul>
+   </ol>
         </td>
       </tr>
       <tr>
@@ -163,10 +162,8 @@
 
     </table>
 	<br>
-	<hr>
-
-	<h3 class="smallheader" id="testing">Testing Utilities</h3>
-                <blockquote class="blockquote">
+	<h3><i class="fas fa-clipboard-check"></i> Testing Utilities</h3>
+                <blockquote class="blue"><i class="fas fa-info-circle"></i> 
                     In some rare cases, Mod Organizer 2 has issues handling .DLL files and they won't load in-game. If you can not get any of the mods in this section to work
                     per the following instructions, then you should try installing the mods directly into the game's <strong>Data</strong> folder rather than through MO2.
                     The files from the mods should end up in <code>Fallout New Vegas\Data\NVSE\plugins</code>).
@@ -176,35 +173,36 @@
                     <li>Once the game has reached the main menu, hit the <code>~</code> key (above the tab key) to open the console</li>
                     <li>Enter <code>GetNVSEVersion</code>, and the console should print <code>NVSE version: 6</code></li>
                         <ul>
-                            <li>If not, <a href="./utilities.html#xnvse">xNVSE</a> is installed incorrectly</li>
+                            <li>If not, <a href="./utilities.html">xNVSE</a> is installed incorrectly</li>
                         </ul>
                     <li>Next, enter <code>GetIsLAA</code>, and the console should print <code>GetIsLAA >> 2</code></li>
                         <ul>
-                            <li>If it prints <code>>> 0</code>, then the <a href="./utilities.html#4gb_patcher">4GB Patch</a> was applied incorrectly</li>
+                            <li>If it prints <code>>> 0</code>, then the <a href="./utilities.html">4GB Patch</a> was applied incorrectly</li>
                             <li>If it prints <code>>> 1</code>, then you need to run Mod Organizer 2 as an administrator</li>
-                            <li>If it prints an error message, then <a href="./utilities.html#jip">JIP LN NVSE</a> is installed incorrectly</li>
+                            <li>If it prints an error message, then <a href="./utilities.html">JIP LN NVSE</a> is installed incorrectly</li>
                         </ul>
                     <li>Next, enter <code>IsDLLLoaded d3dx9_38</code>, and the console should print <code>IsDLLLoaded "d3dx9_38.dll" >> 1</code></li>
                         <ul>
-                            <li>If it prints <code>>> 0</code>, then <a href="./utilities.html#heap">Heap Replacer</a> is installed incorrectly</li>
-                            <li>If it prints an error message, then <a href="./utilities.html#johnny">JohnnyGuitar NVSE</a> is installed incorrectly</li>
+                            <li>If it prints <code>>> 0</code>, then <a href="./utilities.html">Heap Replacer</a> is installed incorrectly</li>
+                            <li>If it prints an error message, then <a href="./utilities.html">JohnnyGuitar NVSE</a> is installed incorrectly</li>
                         </ul>
                     <li>Next, enter <code>IsDLLLoaded NVAC</code>, and the console should print <code>IsDLLLoaded "nvac.dll" >> 1</code></li>
                         <ul>
-                            <li>If not, then <a href="./utilities.html#nvac">NVAC</a> is installed incorrectly</li>
+                            <li>If not, then <a href="./utilities.html">NVAC</a> is installed incorrectly</li>
                         </ul>
                     <li>Next, enter <code>IsDLLLoaded NVTF</code>, and the console should print <code>IsDLLLoaded "nvtf.dll" >> 1</code></li>
                         <ul>
-                            <li>If not, then <a href="./utilities.html#nvtf">NVTF</a> is installed incorrectly</li>
+                            <li>If not, then <a href="./utilities.html">NVTF</a> is installed incorrectly</li>
                         </ul>
                         <li>Next, enter <code>IsDLLLoaded mod_limit_fix</code>, and the console should print <code>IsDLLLoaded "mod_limit_fix.dll" >> 1</code></li>
                             <ul>
-                                <li>If not, then <a href="./utilities.html#limit_fix">Mod Limit Fix</a> is installed incorrectly</li>
+                                <li>If not, then <a href="./utilities.html">Mod Limit Fix</a> is installed incorrectly</li>
                             </ul>
                 </ol>
 
 
-
+<blockquote class="red"><i class="fas fa-exclamation-triangle"></i> Before clicking the following continue link, you should make sure you passed all of the preceding tests! 
+  The Utilities in this section of the guide are required for optimal performance and stability.</blockquote>
     <span class="continue">
       <a href="./bugfix.html">Continue to Bugfix & Quality-of-Life <i class="fas fa-angle-double-right"></i>
       </a>
