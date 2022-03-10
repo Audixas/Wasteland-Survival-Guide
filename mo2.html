@@ -139,31 +139,33 @@
         </ul>
         <li>Paste in the following:</li>
         <ul>
-          <textarea readonly="readonly" style="height: 60rem" onclick="this.focus();this.select()">
-[General]
-bUseThreadedAI=1
-iNumHWThreads=2
-bPreemptivelyUnloadCells=1
-
-[BackgroundLoad]
-bSelectivePurgeUnusedOnFastTravel=1
-
-[Display]
-bFull Screen=1
-iTexMipMapSkip=0
-
-[Controls]
-fForegroundMouseAccelBase=0
-fForegroundMouseAccelTop=0
-fForegroundMouseBase=0
-fForegroundMouseMult=0
-
+<textarea readonly="readonly" style="height: 60rem" onclick="this.focus();this.select()">
 [Audio]
+bUseAudioDebugInformation=0
 iAudioCacheSize=8192
 iMaxSizeForCachedSound=1024
 
-[Archive]
-SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textures2.bsa, Fallout - Meshes.bsa, Fallout - Meshes2.bsa, Fallout - Voices1.bsa, Fallout - Sound.bsa, Fallout - Misc.bsa
+[BackgroundLoad]
+bBackgroundCellLoads=1
+bSelectivePurgeUnusedOnFastTravel=1
+
+[Display]
+bFull Screen=0
+
+[General]
+bPreemptivelyUnloadCells=1
+bUseThreadedAI=1
+iNumHWThreads=2
+SCharGenQuest=001FFFF8
+SIntroMovie=
+
+[Grass]
+fGrassStartFadeDistance=7000
+
+;[TerrainManager]
+;fBlockLoadDistance=300000.0000
+;fBlockLoadDistanceLow=125000.0000
+;~uncomment the above lines to increase visibility distance, disabled by default in case of low spec PCs  
 </textarea>
         </ul>
       </ol>
