@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Special+Elite&display=swap');
+@font-face
+{
+  font-family: 'monofontoregular';
+    src: url('./css/monofonto-webfont.woff2') format('woff2'),
+         url('./css/monofonto-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html
+{
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body
+{
+  max-width: 80%;
+  font-size: 1.8rem;
+  line-height: 1.618;
+  margin-left: auto;
+  margin-right: 5%;
+  color: #d6dbd8;
+  background-color: #0d110b;
+  padding: 13px;
+}
+
+@media (max-width: 684px)
+{
+  body
+  {
+    font-size: 1.53rem;
+  }
+}
+
+@media (max-width: 382px)
+{
+  body
+  {
+    font-size: 1.35rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  
+  line-height: 1.0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  font-weight: 400;
+}
+
+h1
+{
+  font-size: 6rem;
+  font-family: 'Special Elite', cursive;
+  text-transform: uppercase;
+}
+
+h2
+{
+  font-family: 'Roboto Condensed';
+  font-size: 4.5rem;
+
+}
+
+h3
+{
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+h4
+{
+  font-size: 3.5rem;
+}
+
+h5
+{
+  font-size: 3.3rem;
+}
+
+h5
+{
+  font-size: 3rem;
+}
+
+small, sub, sup
+{
+  font-size: 75%;
+}
+
+hr
+{
+  border-color: #a0ea98;
+}
+
+a
+{
+  color: #a0ea98;
+}
+
+header a
+{
+  text-decoration: none;
+}
+
+
+a:hover
+{
+  color: rgb(190, 255, 190);
+}
+
+ul
+{
+  padding-left: 1.4em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+li
+{
+  margin-bottom: 0.4em;
+}
+
+blockquote
+{
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-right: 0.8em;
+  border-left: 5px solid #a0ea98;
+  border-radius: 0.5rem;
+  margin-bottom: 2.5rem;
+  background-color: #393f35;
+}
+
+blockquote.blue
+{
+  border-left: 5px solid #98a0ea;
+  background-color: #35393f;
+}
+
+blockquote.red
+{
+  border-left: 5px solid #ea98a0;
+  background-color: #3f3539;
+}
+
+blockquote.yellow
+{
+  border-left: 5px solid #e5ea98;
+  background-color: #3f3b35;
+}
+
+blockquote p
+{
+  margin-bottom: 0;
+}
+
+img
+{
+  height: auto;
+  max-width: 100%;
+}
+
+
+/* Pre and Code */
+pre
+{
+  background-color: #40363a;
+  display: block;
+  padding: 1em;
+  overflow-x: auto;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+code
+{
+  font-size: 0.9em;
+  padding: 0 0.5em;
+  background-color: #40363a;
+  white-space: pre-wrap;
+}
+
+pre > code
+{
+  padding: 0;
+  background-color: transparent;
+  white-space: pre;
+}
+/* Tables */
+table
+{
+  text-align: left;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th
+{
+  min-width: 15rem;
+  padding: 0.5em;
+  border-bottom: 1px solid #40363a;
+}
+
+th
+{
+  text-decoration: bold;
+  color: #A0EA98;
+  font-size: 2.2rem;
+}
+/* Buttons, forms and input */
+input, textarea
+{
+  border: 1px solid #d9d8dc;
+}
+
+input:focus, textarea:focus
+{
+  border: 1px solid #393F35;
+}
+
+textarea
+{
+  font-family: 'JetBrains Mono', monospace;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.button, button, input[type="submit"], input[type="reset"], input[type="button"]
+{
+  display: inline-block;
+  font-family: Tahoma;
+  padding: 3px 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #f7f8f9;
+  color: #120c0e;
+  border-radius: 4px;
+  border: 1px solid #e3f6fc;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.button[disabled], button[disabled], input[type="submit"][disabled], input[type="reset"][disabled], input[type="button"][disabled]
+{
+  cursor: default;
+  opacity: .5;
+}
+
+.button:focus:enabled, .button:hover:enabled, button:focus:enabled, button:hover:enabled, input[type="submit"]:focus:enabled, input[type="submit"]:hover:enabled, input[type="reset"]:focus:enabled, input[type="reset"]:hover:enabled, input[type="button"]:focus:enabled, input[type="button"]:hover:enabled
+{
+  background-color: #cccccc;
+  border-color: #888888;
+  color: #120c0e;
+  outline: 0;
+}
+
+textarea, select, input[type]
+{
+  color: #d9d8dc;
+  padding: 6px 10px;
+    /* The 6px vertically centers text on FF, ignored by Webkit */
+  margin-bottom: 10px;
+  background-color: #393F35;
+  border: 1px solid #A0EA98;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+textarea:focus, select:focus, input[type]:focus
+{
+  border: 1px dashed #393F35;
+  outline: 0;
+}
+
+input[type="checkbox"]:focus
+{
+  outline: 1px dotted #eb99a1;
+}
+
+label, legend, fieldset
+{
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+abbr
+{
+  cursor: help;
+}
+
+/* The side navigation menu */
+.sidebar
+{
+  top: 1rem;
+  left: 1rem;
+  width: auto;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+/* Sidebar links */
+.sidebar a
+{
+  display: block;
+  font-size: 2.5rem;
+  padding: 0 1rem 0 1rem;
+  line-height: 1.6;
+  color: #A0EA98;
+  text-decoration: none;
+  font-family: 'monofontoregular';
+}
+/* Active/current link */
+.sidebar a.active
+{
+  background-color: #a0ea9888;
+  outline: rgb(190, 255, 190) solid 2px;
+  outline-offset: -2px;
+  color: rgb(190, 255, 190);
+}
+/* Links on mouse-over */
+.sidebar a:hover:not(.active)
+{
+  background-color: rgb(37, 49, 37);
+  outline: rgb(190, 255, 190) solid 2px;
+  outline-offset: -2px;
+}
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+ div.content {
+     padding: 1px 16px;
+     height: 1000px;
+}
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+ @media screen and (max-width: 700px) {
+     .sidebar {
+         width: 100%;
+         height: auto;
+         position: relative;
+    }
+     .sidebar a {
+        float: right;
+    }
+     div.content {
+        margin-right: 0;
+    }
+}
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+ @media screen and (max-width: 400px) {
+     .sidebar a {
+         text-align: center;
+         float: none;
+    }
+}
+ span.continue {
+	margin: 0 auto;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	display: table;
+	max-width: 100%;
+    font-size: 4.5rem;
+    line-height: 1.3;
+    color: #A0EA98;
+    text-decoration: none;
+    font-family: 'monofontoregular';
+    font-weight: 1000;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+.continue a
+{
+  display: block;
+  font-size: 5rem;
+  padding: 0 1rem 0 1rem;
+  line-height: 1.6;
+  color: #A0EA98;
+  text-decoration: none;
+  font-family: 'monofontoregular';
+}
+/* Active/current link */
+.continue a:hover
+{
+  background-color: rgb(37, 49, 37);
+  outline: rgb(190, 255, 190) solid 4px;
+}
+
+strong {
+  color: rgb(190, 255, 190);
+}

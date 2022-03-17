@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+MIT License
+
+Copyright (c) 2021 VivaNewVegas
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<meta charset="UTF-8">
+<title>Wasteland Survival Guide</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="./style.css" type="text/css">
+<style>
+</style>
+<script src="https://kit.fontawesome.com/a83e24dd8d.js" crossorigin="anonymous"></script>
+
+<body>
+  <!-- The sidebar -->
+  <div class="sidebar">
+    <a href="./index.html"> Intro</a>
+    <a href="./setup.html">Game Setup</a>
+    <a href="./mo2.html"> MO2 Setup</a>
+    <a href="./ttw.html" class="active"> TTW Setup</a>
+    <a href="./utilities.html">Utilities</a>
+    <a href="./bugfix.html">Bugs/QoL</a>
+    <a href="./ui.html">UI/HUD</a>
+    <a href="./aesthetics.html">Aesthetics</a>
+    <a href="./gameplay.html">Gameplay</a>
+    <a href="./content.html">Content</a>
+    <a href="./overhauls.html">Overhauls</a>
+    <a href="./finish.html">Finish</a>
+  </div>
+  <header>
+    <a href="./index.html">
+      <h1><i class="fas fa-book-dead"></i> Wasteland Survival Guide</h1>
+    </a>
+  </header>
+
+  <h2><i class="fas fa-download"></i> Installing Tale of Two Wastelands</h2>
+  <hr>
+  <p>
+    In this step, we will install and activate Tale of Two Wastelands through Mod Organizer 2.
+  </p>
+  <blockquote>
+    If you run into any errors when installing, check the <a href="https://taleoftwowastelands.com/faq"
+      target="_blank">FAQ</a> to see if it has the solution.
+  </blockquote>
+  <ol>
+    <li>Make sure both Mod Organizer 2 and the game are closed.</li>
+    <li>From the <a href="https://taleoftwowastelands.com/dl" target="_blank">TTW Download</a> page, download the
+      <strong>3.3 Installer</strong> file.
+    </li>
+    <li>Extract the contents of the <strong>3.3 Installer</strong> archive to a new folder called <strong>TTW
+        Installer</strong>
+      in a safe location <abbr title="Do not use any folder falling under UAC such as Program Files, Desktop, Documents, Downloads, etc. 
+          Use a simple location like C:/Modding">outside of any default Windows folders.</abbr>
+    </li>
+    <li>Once everything has been extracted, navigate to <code>Mod Organizer 2\mods\</code> and create a folder there
+      named <strong>Tale of Two Wastelands</strong>.</li>
+  </ol>
+  <blockquote>
+    If you are unsure as to where/what your MO2 <b>Mods</b> folder is, open up MO2, select the <img style="width:2%"
+      src="./img/mo2 folders.png" alt="mo2 folders">
+    button at the top, and select <strong>Open Mods folder</strong>.
+  </blockquote>
+  <ol start="5">
+    <li>Back in the <strong>TTW Installer</strong> folder, right-click the <strong>TTW Install.exe</strong> and select
+      <strong>Run As Administrator</strong>.
+    </li>
+    <li>In the installer, verify that the automatically set file paths for both your Fallout 3 and Fallout New Vegas
+      installations are correct.</li>
+    <li>Set the Tale of Two Wastelands install path to the <code>Mod Organizer 2\mods\Tale of Two Wastelands</code> you
+      created in step 4.</li>
+    <img src="./img/install.png" alt="Install paths for 3.3 installation">
+    <li>Ensure your paths look similar to the example above, then select <strong>Install</strong>.</li>
+  </ol>
+  <blockquote class="red"><i class="fas fa-exclamation-triangle"></i>
+    The install may take a long time as the .ogg encoding is very CPU-intensive. It takes about 40 minutes on my 5600x
+    but could take several hours or even longer on a slower CPU.<br>
+    It is recommended to leave your computer alone and have any CPU-intensive applications closed during this time so as
+    to not overheat your CPU and cause the TTW installation to fail.
+  </blockquote>
+
+
+  <h3><i class="far fa-check-square"></i> Activating TTW in Mod Organizer 2</h3>
+  <ol start="9">
+    <li>Launch Mod Organizer 2</li>
+    <li>If you installed TTW correctly with the correct filepaths, you should see the <strong>Tale of Two
+        Wastelands</strong> mod in the left pane of MO2</li>
+    <ul>
+      <li>If you do not see anything, you did not install TTW to the correct folder. Find out where the files were
+        installed to and move them to <code>Mod Organizer 2\mods\Tale of Two Wastelands</code></li>
+    </ul>
+    <li>Click the checkbox next to it in the left pane, and the right pane should fill with plugins</li>
+  </ol>
+  <blockquote class="blue"><i class="fas fa-info-circle"></i>
+    You can now safely uninstall Fallout 3.
+  </blockquote>
+  <!-- QOLORE CONTENT ENDS HERE -->
+
+  <span class="continue"><a href="./utilities.html">Continue to Utilities <i
+        class="fas fa-angle-double-right"></i></a></span>
+
+  <hr>
+  <footer>
+    Guide created by WSG contributors, do not reproduce without permission.
+  </footer>
+</body>
+
+</html>
