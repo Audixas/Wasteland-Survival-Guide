@@ -186,7 +186,7 @@ table {
 
 td,
 th {
-    min-width: auto;
+    min-width: 35rem;
     padding: 0.5em;
     border-bottom: 1px solid #40363a;
 }
