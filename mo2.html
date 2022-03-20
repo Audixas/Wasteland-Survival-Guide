@@ -93,7 +93,7 @@
             </ul>
         </ol>
         <h3>Configuring Settings</h3>
-        <ol start="9">
+        <ol>
             <li>If there is a plugin called <strong>FalloutNV_lang.esp</strong> in the right pane of Mod Organizer 2, navigate to the game's <strong>Data</strong> folder and delete it</li>
             <ul>
                 <li>If you do not know what the game's <strong>Data</strong> folder is, read the Key Terminology section from the <a class="sublink" href="./setup.html#terms" target="_blank">Initial Setup</a> page</li>
@@ -102,7 +102,7 @@
         <blockquote>
             The translation plugin must be deleted because it directly edits 1000s of records to change the language, which will cause many incompatibilities with most mods.
         </blockquote>
-        <ol start="10">
+        <ol start="2">
             <li>Select the <img src="./img/mo2%20settings.png" alt="mo2 settings"> button at the top of MO2 to open the settings
             </li>
             <li>In the <strong>Theme</strong> tab, you can select a different style from the drop-down menu at the top</li>
@@ -124,13 +124,32 @@
             If at any point you get a pop-up called <strong>INI file is read-only</strong>, select <strong>Remember my choice</strong> from the drop-down at the bottom then click <strong>Clear the read-only flag</strong>
         </blockquote>
 
+        <h3>Creating Profiles</h3>
+        <p>
+            Mod Organizer 2's "Profiles" feature allows for easy switching between different mod configurations. In this step, we will setup a testing profile and a main profile. The default profile will stay completely untouched and act as a backup. The testing
+            profile will be configured the same as the main profile for the guide, but will have all mods unchecked, allowing you to only activate certain mods for easy testing/troubleshooting. And finally, the main profile is where we will install and
+            enable all of our mods. Profiles can be selected via the drop-down menu above the left pane
+        </p>
+        <br>
+        <ol>
+            <li>Select the <img src="./img/mo2 profiles.png" alt="mo2 profiles"> button at the top of MO2 to open the profiles menu</li>
+            <li>Select the <strong>Default</strong> profile, then select <strong>Copy</strong></li>
+            <li>Name the new profile <strong>Testing</strong></li>
+            <li>Select the <strong>Testing</strong> profile and make sure both <strong>Use profile-specific Game INI
+                    Files</strong> and <strong>Automatic Archive Invalidation</strong> are checked at the bottom</li>
+            <li>With the <strong>Testing</strong> profile selected, select <strong>Copy</strong></li>
+            <li>Name the new profile <strong>Tale of Two Wastelands</strong></li>
+            <li>Exit out of the profiles menu and select the <strong>Tale of Two Wastelands</strong> profile from the drop-down above the left pane</li>
+            <img src="./img/mo2 profile select.png" alt="profile select">
+        </ol>
+
         <h3>Tweaking FalloutCustom.ini</h3>
         <p>
             In this step, we will configure the game's INI files to increase performance/stability. We will take advantage of JIP LN NVSE's FalloutCustom.ini feature to make our changes, which allows for INI changes to be made safely without editing the default INIs.
             Because of this, these changes will not take affect until you install JIP LN NVSE in the <a href="./utilities.html#jip" target="_blank">Utilities</a> step.
         </p>
         <br>
-        <ol start="16">
+        <ol>
             <li>Click the <img src="./img/mo2%20ini.png" alt="mo2 ini button"> button at the top of MO2 and select <strong>INI
           Editor</strong></li>
             <li>Select the <strong>FalloutCustom.ini</strong> tab, which should be blank</li>
