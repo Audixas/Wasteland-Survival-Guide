@@ -56,41 +56,32 @@ SOFTWARE.
     <hr>
     <p>In this step, we will do clean installations and configurations of the games, which is <strong>required for the
             guide</strong>.</p>
-    <blockquote class="red">It is crucial to install TTW on <strong>clean installs</strong> of both games outside of UAC folders, as the following steps describe. Skip this section at your own peril; support will not be provided for incorrectly installed games.
+    <blockquote class="red"><i class="fas fa-exclamation-triangle"></i> It is imperative to install TTW on <strong>clean installs</strong> of both games outside of UAC folders, as the following steps describe. Skip this section at your own peril; support will not be provided
+        for incorrectly installed games
 
     </blockquote>
 
     <h3>Required Installation Location</h3>
     <p>A clean installation is not only required to get rid of any potential leftover mod files, but also to make sure the game is installed in a safe location. Here is what you need to know when choosing where to install your game:
         <ul>
-            <li>
-                <b>Avoid any default Windows folders:</b> This includes but is not limited to <code>C:\Program Files</code>, <code>C:\Program Files x86</code>, your <code>Desktop</code>, and your <code>Documents</code> folders. This is due to Windows
-                UAC (or User Account Control), which heavily monitors and protects these folders. This can cause many issues with the game and any modding tools. As an example of a safe location, my Steam directory is <code>C:\Games\Steam</code>
-            </li>
-            <li>
-                <b>Install on an SSD if possible:</b> Having the game on an SSD will drastically improve load times and decrease stuttering. The game plus the guide should only take up about 30GB of space, but the importance of having extra free space
-                on your drive should not be understated. Drives will generally performance worse as they get more full, so you won't see as much of an improvement with load times and stuttering with a full drive
-            </li>
-            <li>
-                <b>Fallout 3 Installation:</b> Fallout 3 only needs to be installed for running the TTW installer, and can be uninstalled after the installer completes. It still needs to be installed outside of any default Windows folder as outlined above.
-            </li>
+            <li><b>Avoid any default Windows folders:</b> This includes but is not limited to <code>C:\Program Files</code>, <code>C:\Program Files x86</code>, your <code>Desktop</code>, and your <code>Documents</code> folders. This is due to Windows UAC
+                (or User Account Control), which heavily monitors and protects these folders. This can cause many issues with the game and any modding tools. As an example of a safe location, my Steam directory is <code>C:\Games\Steam</code></li>
+            <li><b>Install on an SSD if possible:</b> Having the game on an SSD will drastically improve load times and decrease stuttering. The game plus the guide should only take up about 30GB of space, but the importance of having extra free space on
+                your drive should not be understated. Drives will generally performance worse as they get more full, so you won't see as much of an improvement with load times and stuttering with a full drive</li>
+            <li><b>Fallout 3 Installation:</b> Like New Vegas, it also needs to be installed outside of any default Windows folders as outlined above.</li>
         </ul>
     </p>
     <h3>Uninstalling the Games</h3>
     <blockquote class="yellow">
-        If you do not have the game installed yet, skip this step.
+        <i class="fas fa-exclamation-circle"></i> If you do not have the game installed yet, skip this step.
     </blockquote>
     <p>
         As the game is available on both Steam and GOG, there are separate instructions here for each version. You obviously only need to follow the directions for the version you have.
     </p>
     <table>
         <tr>
-            <th>
-                Steam
-            </th>
-            <th>
-                GOG
-            </th>
+            <th>Steam</th>
+            <th>GOG</th>
         </tr>
         <tr>
             <td>
@@ -101,8 +92,7 @@ SOFTWARE.
                     <li>Navigate to <code>Steam\steamapps\common\</code> and, if present, delete the <strong>Fallout New
                             Vegas</strong> folder</li>
                     <li>Navigate to <code>Documents\My Games\FalloutNV</code> and delete all the files ending in
-                        <strong>.INI</strong>
-                    </li>
+                        <strong>.INI</strong></li>
                     <li>Repeat for <strong>Fallout 3</strong></li>
                 </ol>
             </td>
@@ -113,8 +103,7 @@ SOFTWARE.
                     <li>Right-click on it and select <strong>Manage Installation &nbsp; <i class="fas fa-caret-right"></i> &nbsp; Uninstall</strong></li>
                     <li>Navigate to where the game is installed (<code>GOG Galaxy\Games</code> by default) and, if present, delete the <strong>Fallout New Vegas</strong> folder</li>
                     <li>Navigate to <code>Documents\My Games\FalloutNV</code> and delete all the files ending in
-                        <strong>.INI</strong>
-                    </li>
+                        <strong>.INI</strong></li>
                     <li>Repeat for <strong>Fallout 3</strong></li>
                 </ol>
             </td>
@@ -123,7 +112,7 @@ SOFTWARE.
 
     <h3>Making a New Steam Library</h3>
     <blockquote class="yellow">
-        If you already have a Steam library set up outside of any default Windows folder, or you have the game on GOG, skip this step.
+        <i class="fas fa-exclamation-circle"></i> If you already have a Steam library set up outside of any default Windows folder, or you have the game on GOG, skip this step.
     </blockquote>
     <p>
         A new Steam library needs to be set up to install the game on, as the default library is in a default Windows UAC-protected folder (<code>C:\Program Files x86\Steam</code>).
@@ -138,8 +127,8 @@ SOFTWARE.
         </ul>
     </ol>
     <blockquote class="red">
-        IMPORTANT: By default, Steam only allows one library per drive, but there is a workaround. If for example you already have the default Steam library at <code>C:\Program Files x86\Steam</code>, but still want your game on your C:\ drive, you will
-        need to follow <a href="https://github.com/LostDragonist/steam-library-setup-tool/wiki/Usage-Guide" target="_blank">these</a> instructions to do so.
+        <i class="fas fa-exclamation-triangle"></i> <strong><span style="font-size: 2.2rem">IMPORTANT:</span></strong> By default, Steam only allows one library per drive, but there is a workaround. If for example you already have the default Steam library
+        at <code>C:\Program Files x86\Steam</code>, but still want your game on your C:\ drive, you will need to follow <a href="https://github.com/LostDragonist/steam-library-setup-tool/wiki/Usage-Guide" target="_blank">these</a> instructions to do so.
     </blockquote>
     <ol start="4">
         <li>Exit out of the settings when you are finished</li>
@@ -147,12 +136,8 @@ SOFTWARE.
     <h3>Installing the Games</h3>
     <table>
         <tr>
-            <th>
-                Steam
-            </th>
-            <th>
-                GOG
-            </th>
+            <th>Steam</th>
+            <th>GOG</th>
         </tr>
         <tr>
             <td>
@@ -182,12 +167,8 @@ SOFTWARE.
     <p>Now that the game is installed, there are two folders from it that will be referred to in the guide often: </p>
     <table>
         <tr>
-            <th>
-                Steam
-            </th>
-            <th>
-                GOG
-            </th>
+            <th>Steam</th>
+            <th>GOG</th>
         </tr>
         <tr>
             <td>
@@ -218,19 +199,15 @@ SOFTWARE.
         </tr>
     </table>
     <h3>Post-Installation</h3>
-    <p class="smallheader" id="file_extensions">Enabling File Extensions</p>
-
-    <p>
-        By default, Windows Explorer will not show file extensions (such as .exe, .dll, or .esp). These extensions are very important when going through the guide, so it is highly recommended to enable file extensions:
-    </p>
-    <br>
+    <h4>Enabling File Extensions</h4>
+    <p>By default, Windows Explorer will not show file extensions (such as .exe, .dll, or .esp). These extensions are very important when going through the guide, so it is highly recommended to enable file extensions:</p>
     <ol>
         <li>Open Windows Explorer</li>
         <li>Select the <strong>View</strong> tab at the top</li>
         <li>Check the box next to <strong>File name extensions</strong></li>
         <img src="./img/show file extensions.png" alt="show file extensions">
     </ol>
-    <p class="smallheader" id="generating_inis">Generating Fresh .INI Files</p>
+    <h4>Generating Fresh .INI Files</h4>
     <p><b>For New Vegas:</b></p>
     <ol>
         <li>Run the game through Steam/GOG</li>
@@ -250,7 +227,7 @@ SOFTWARE.
         <li>Set the <strong>Resolution</strong> option to your preference (the launcher usually does not set it to your monitor's max resolution)</li>
         <li>Click <strong>OK</strong> then <strong>Exit</strong></li>
     </ol>
-    <br>
+
     <p><b>For Fallout 3:</b></p>
     <ol>
         <li>Run the game through Steam/GOG</li>
