@@ -109,6 +109,12 @@ ul {
     margin-bottom: 1rem;
 }
 
+ul.columns {
+    columns: 4;
+    -webkit-columns: 4;
+    -moz-columns: 4b;
+}
+
 li {
     margin-bottom: 0.4em;
 }
