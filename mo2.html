@@ -28,9 +28,6 @@ SOFTWARE.
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="./style.css" type="text/css">
 <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-<style>
-
-</style>
 <script src="https://kit.fontawesome.com/a83e24dd8d.js" crossorigin="anonymous"></script>
 
 <body>
@@ -48,6 +45,7 @@ SOFTWARE.
         <a href="./aesthetics.html">Aesthetics</a>
         <a href="./finish.html">Finish</a>
         <a href="./appendix.html">Appendix</a>
+        <a href="./rootbuilder.html">Root Builder</a>
     </div>
     <header>
         <a href="./index.html">
@@ -96,6 +94,15 @@ SOFTWARE.
             <li>Although it doesn't technically have to be installed on the same drive as the game, it is still recommended to install on an SSD if possible</li>
             <li>Click <strong>Next</strong> until the installer finishes</li>
         </ol>
+        <h3>Root Builder Setup</h3>
+        If you want to know how Root Builder works, read <a href="./rootbuilder.html">here.</a> Steps will be provided anyway in case you only want to follow along without understanding the plugin.
+        <ol>
+            <li>Download the <strong>Root Builder</strong> main file from <a href="https://www.nexusmods.com/skyrimspecialedition/mods/31720?tab=files" target="_blank">here</a></li>
+            <li>Extract the archive and cut the "rootbuilder" folder that was inside it</li>
+            <li>Go to the <strong>MO2 installation folder</strong>, which is "C:\Modding" by default</li>
+            <li>Open the "plugins" folder and paste the "rootbuilder" folder you previously cut</li>
+            <img src="./img/rootbuilderlocation.png" alt="Root Builder Location">
+        </ol>
         <h3>Initial Setup</h3>
         <ol>
             <li>Run <strong>ModOrganizer.exe</strong></li>
@@ -135,6 +142,7 @@ SOFTWARE.
             <ul>
                 <li>The Many: I use the <strong>dracula</strong> theme.</li>
                 <li>Audixas: I use <strong>vs15 Dark-Green</strong> for TTW.</li>
+                <li>VishVadeva50: I use <strong>1809 Dark Mode</strong></li>
             </ul>
             <li>In the <strong>Nexus</strong> tab, select <strong>Connect to Nexus</strong></li>
             <img src="./img/mo2%20connect.png" alt="connect to nexus">
@@ -146,11 +154,14 @@ SOFTWARE.
             <li>Once you authorize it, you can close out of your browser and of the MO2 settings</li>
             <li>Allow MO2 to restart if it asks</li>
         </ol>
+        <ol start="8">
+            <li>In the <strong>Plugins</strong> tab, disable "autobuild"</li>
+            <img src="./img/autobuild.png" alt="disable autobuild">
+        </ol>
         <blockquote>
             If at any point you get a pop-up called <strong>INI file is read-only</strong>, select <strong>Remember my choice</strong> from the drop-down at the bottom then click <strong>Clear the read-only flag</strong>
         </blockquote>
-        <ol start="8">
-
+        <ol start="9">
             <li>Select the <img src="./img/mo2 profiles.png" alt="mo2 profiles"> button at the top of MO2 to open the profiles menu</li>
             <li>Select the <strong>Default</strong> profile and make sure both <strong>Use profile-specific Game INI
                     Files</strong> and <strong>Automatic Archive Invalidation</strong> are checked at the bottom</li>

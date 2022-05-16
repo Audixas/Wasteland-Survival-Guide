@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="./style.css" type="text/css">
 <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-<style></style>
 <script src="https://kit.fontawesome.com/a83e24dd8d.js" crossorigin="anonymous"></script>
 <!-- 
 MIT License
@@ -46,6 +45,7 @@ SOFTWARE.
         <a href="./aesthetics.html">Aesthetics</a>
         <a href="./finish.html">Finish</a>
         <a href="./appendix.html">Appendix</a>
+        <a href="./rootbuilder.html">Root Builder</a>
     </div>
     <header>
         <a href="./index.html">
@@ -64,6 +64,45 @@ SOFTWARE.
         <i class="fas fa-exclamation-triangle"></i> All of the mods in this section are absolutely <b>essential</b> for the mods in the guide to function! Many mods in the following sections are optional, but make sure to get every Utility listed - they
         are all hard requirements.
     </blockquote>
+    <h3>Mods installed using Root Builder</h3>
+    <a target="_blank" href="https://www.nexusmods.com/newvegas/mods/62552">FNV 4GB Patcher</a>
+    <ol>
+        <li>Download the <strong>Main File - 4GB Patcher</strong></li>
+        <li>From the downloaded archive, extract the <strong>.exe</strong> file to the game's <strong>Root</strong> folder </li>
+        <li>Right-click on <strong>FNVpatch.exe</strong> and select <strong>Run as administrator</strong></li>
+        <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b></li>
+        <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder</li>
+        <li>Create an empty mod in MO2, name it "4GB Aware Executable"</li>
+        <li>CTRL+double click the mod, here create a new folder named "Root"</li>
+        <img src="./img/4gbroot.png" alt="4GB Patcher Root Folder">
+        <li>Go back in your game root folder, cut <b>FalloutNV.exe</b> and then paste it inside the Root folder you created in the previous step</li>
+        <li>Still in your game root folder, rename <b>FalloutNV_backup.exe</b> back into <b>FalloutNV.exe</b>.</li>
+    </ol>
+    <a target="_blank" href="https://github.com/xNVSE/NVSE/releases/tag/6.2.7">xNVSE</a>
+    <ol>
+        <li>Download the latest release archive</li>
+        <li>Create an empty mod in MO2, name it "xNVSE"</li>
+        <li>CTRL+double click the mod, here create a new folder named "Root"</li>
+        <blockquote class="blue">
+            <i class="fas fa-info-circle"></i>It's a good idea to append the xNVSE version number after the mod name, for example xNVSE 6.2.7.
+        </blockquote>
+        <li>Open the xNVSE archive in 7zip and drag the highlighted files into the Root folder</li>
+        <img src="./img/xnvseroot.png" alt="xNVSE Root Folder">
+        <li>Open the Data folder inside the xNVSE archive and drag the NVSE folder next to Root</li>
+        <img src="./img/xnvsenvsefolder.png" alt="xNVSE NVSE Folder">
+    </ol>
+    <a target="_blank" href="https://www.nexusmods.com/newvegas/mods/69779">New Vegas Heap Replacer</a>
+    <ol>
+        <li>Download the <strong>Main File - NVHR</strong> using the <strong>Manual Download button</strong></li>
+        <li>Create an empty mod in MO2, name it "NVHR"</li>
+        <li>From the downloaded archive, run the <strong>cpu_info.exe</strong></li>
+        <li>A command prompt will tell you which version of the mod to use</li>
+        <blockquote class="blockquote"> 
+            Pay attention to the line that says <b>=&gt; Use &lt;= </b>. For me it says <strong>AVX2</strong>, but it may be different for you.
+        </blockquote>
+        <li>Back in the downloaded archive, open the folder's which name corresponds to the version that the command prompt told you to use</li>
+        <li>From that folder, extract the <strong>d3dx9_38.dll</strong> to the <strong>Root</strong> folder of the NVHR mod you created in MO2</li>
+    </ol>
     <br>
     <table>
         <tr>
@@ -71,40 +110,12 @@ SOFTWARE.
             <th>Description</th>
             <th>Instructions</th>
         </tr>
-        <tr>
-            <td>
-                <a target="_blank" href="https://www.nexusmods.com/newvegas/mods/62552/">FNV 4GB Patcher</a>
-                <br>
-            </td>
-            <td> Makes Fallout New Vegas 4GB-aware & automatically loads NVSE </td>
-            <td>
-                <ol>
-                    <li>Download the <strong>Main File - 4GB Patcher</strong></li>
-                    <li>From the downloaded archive, extract the <strong>.exe</strong> file to the game's <strong>Root</strong> folder </li>
-                    <li>Right-click on <strong>FNVpatch.exe</strong> and select <strong>Run as administrator</strong></li>
-                    <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b></li>
-                    <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder </li>
-                </ol>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a target="_blank" href="https://github.com/xNVSE/NVSE/releases/latest">xNVSE</a>
-                <br>
-                <small>New Vegas Script Extender</small>
-            </td>
-            <td> Script extender. Required by the majority of mods including TTW </td>
-            <td>
-                <li>Download the <strong>nvse_6_2_6.7z</strong> archive</li>
-                <li>Extract the <b>contents</b> of the archive to the <abbr title="..\Fallout New Vegas - the folder where FalloutNV.exe is located">Root</abbr> folder</li>
-            </td>
-        </tr>
+        <table>
         <tr>
             <td><a target="_blank" href="https://www.nexusmods.com/newvegas/mods/58277">JIP LN NVSE</a></td>
             <td> An extension of NVSE adding 1000+ new functions, numerous engine bug fixes/tweaks, and restoreing several broken game features </td>
             <td><strong>Main File - JIP LN NVSE</strong></td>
         </tr>
-
         <tr>
             <td><a target="_blank" href="https://www.nexusmods.com/newvegas/mods/66927">JohnnyGuitar NVSE</a></td>
             <td> Script extender plugin; required by many mods </td>
@@ -152,26 +163,6 @@ SOFTWARE.
             <td> Greatly increases the plugin limit by fixing a vanilla bug. Improves performance, even if you are nowhere near the limit </td>
             <td><strong>Main File - FNVModLimitFix</strong></td>
         </tr>
-
-        <tr>
-            <td><a target="_blank" href="https://www.nexusmods.com/newvegas/mods/69779">New Vegas Heap Replacer</a></td>
-            <td> Replaces the game's default memory management with a more efficient version, resulting in faster load times, reduced stutter, increased performance and stability<br><br><img src="./img/nvhr.png" alt="nvhr command prompt" style="float: right"></td>
-            <td>
-                <ol>
-                    <li>Download the <strong>Main File - NVHR</strong> using the <strong>Manual Download</strong> button</li>
-                    <li>From the downloaded archive, run the <strong>cpu_info.exe</strong></li>
-                    <li>A command prompt will tell you which version of the mod to use</li>
-                </ol>
-                <blockquote class="blockquote">
-                    Pay attention to the line that says <b>=&gt; Use &lt;= </b>. For me it says <strong>AVX2</strong>, but it may be different for you.
-                </blockquote>
-                <ol start="4">
-                    <li>Back in the downloaded archive, open the folder's which name corresponds to the version that the command prompt told you to use</li>
-                    <li>From that folder, extract the <strong>d3dx9_38.dll</strong> to the game's <strong>Root</strong> folder
-                    </li>
-                </ol>
-            </td>
-        </tr>
         <tr>
             <td><a target="_blank" href="https://www.nexusmods.com/newvegas/mods/66537">New Vegas Tick Fix</a></td>
             <td> Allows New Vegas to run above 60fps without physics issues, while reducing stuttering and increasing performance </td>
@@ -196,7 +187,6 @@ SOFTWARE.
             <td>NVSE plugin that alters, restores and changes gameplay features</td>
             <td><strong>Main File - yGTM</strong></td>
         </tr>
-
 
     </table>
     <br>
