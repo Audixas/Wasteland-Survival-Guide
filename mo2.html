@@ -103,6 +103,7 @@ SOFTWARE.
             <li>Open the "plugins" folder and paste the "rootbuilder" folder you previously cut</li>
             <img src="./img/rootbuilderlocation.png" alt="Root Builder Location">
         </ol>
+        
         <h3>Initial Setup</h3>
         <ol>
             <li>Run <strong>ModOrganizer.exe</strong></li>
@@ -113,10 +114,12 @@ SOFTWARE.
             <img src="./img/MO2-install-TTW.png" alt="TTW option of MO2">
             <li>On the next page, keep the <strong>Location</strong> file path default</li>
         </ol>
+
         <blockquote>
             If you have MO2 installed on an SSD or a HDD with little space, you can check the <strong>Show advanced
         options</strong> box and change the <strong>Downloads</strong> file path to a different drive with more space. This will not affect download/game performance, and the downloads can be deleted after the mods have been installed.
         </blockquote>
+
         <ol start="6">
             <li>On the last page, select <strong>Finish</strong></li>
             <li>MO2 will launch and prompt you with a pop-up called <strong>Show tutorial?</strong>, in which you should select <strong>No</strong></li>
@@ -132,9 +135,11 @@ SOFTWARE.
                 <li>If you do not know what the game's <strong>Data</strong> folder is, read the Key Terminology section from the <a class="sublink" href="./setup.html#terms" target="_blank">Initial Setup</a> page</li>
             </ul>
         </ol>
+
         <blockquote>
             The translation plugin must be deleted because it directly edits 1000s of records to change the language, which will cause many incompatibilities with most mods.
         </blockquote>
+
         <ol start="2">
             <li>Select the <img src="./img/mo2%20settings.png" alt="mo2 settings"> button at the top of MO2 to open the settings
             </li>
@@ -153,21 +158,16 @@ SOFTWARE.
             <li>MO2 will open your browser and prompt you to authorize the connection</li>
             <li>Once you authorize it, you can close out of your browser and of the MO2 settings</li>
             <li>Allow MO2 to restart if it asks</li>
-        </ol>
-        <ol start="8">
             <li>In the <strong>Plugins</strong> tab, disable "autobuild"</li>
             <img src="./img/autobuild.png" alt="disable autobuild">
-        </ol>
-        <blockquote>
-            If at any point you get a pop-up called <strong>INI file is read-only</strong>, select <strong>Remember my choice</strong> from the drop-down at the bottom then click <strong>Clear the read-only flag</strong>
-        </blockquote>
-        <ol start="9">
+            <blockquote>
+                If at any point you get a pop-up called <strong>INI file is read-only</strong>, select <strong>Remember my choice</strong> from the drop-down at the bottom then click <strong>Clear the read-only flag</strong>
+            </blockquote>
             <li>Select the <img src="./img/mo2 profiles.png" alt="mo2 profiles"> button at the top of MO2 to open the profiles menu</li>
             <li>Select the <strong>Default</strong> profile and make sure both <strong>Use profile-specific Game INI
-                    Files</strong> and <strong>Automatic Archive Invalidation</strong> are checked at the bottom</li>
+            Files</strong> and <strong>Automatic Archive Invalidation</strong> are checked at the bottom</li>
             <img src="./img/mo2 profile settings.png" alt="mo2 profile settings">
         </ol>
-
 
         <h3>Tweaking FalloutCustom.ini</h3>
         <p>
@@ -176,66 +176,65 @@ SOFTWARE.
         </p>
         <ol>
             <li>Click the <img src="./img/mo2%20ini.png" alt="mo2 ini button"> button at the top of MO2 and select <strong>INI
-          Editor</strong></li>
+            Editor</strong></li>
             <li>Select the <strong>FalloutCustom.ini</strong> tab, which should be blank</li>
             <ul>
-                <li>Make sure you are in the <strong>FalloutCustom.ini</strong> tab and NOT the <strong>Custom.ini</strong> tab
-                </li>
+                <li>Make sure you are in the <strong>FalloutCustom.ini</strong> tab and NOT the <strong>Custom.ini</strong> tab</li>
             </ul>
             <li>Paste in the following:</li>
             <ul>
                 <textarea readonly="readonly" style="height: 60rem" onclick="this.focus();this.select()">
-[Audio]
-bUseAudioDebugInformation=0
-iAudioCacheSize=8192
-iMaxSizeForCachedSound=1024
+                    [Audio]
+                    bUseAudioDebugInformation=0
+                    iAudioCacheSize=8192
+                    iMaxSizeForCachedSound=1024
 
-[BackgroundLoad]
-bBackgroundCellLoads=1
-bSelectivePurgeUnusedOnFastTravel=1
+                    [BackgroundLoad]
+                    bBackgroundCellLoads=1
+                    bSelectivePurgeUnusedOnFastTravel=1
 
-[Controls]
-fForegroundMouseAccelBase=0
-fForegroundMouseAccelTop=0
-fForegroundMouseBase=0
-fForegroundMouseMult=0
-fXenonVertLookSpeed=1200.0000
-fXenonHorizLookSpeed=1500.0000
+                    [Controls]
+                    fForegroundMouseAccelBase=0
+                    fForegroundMouseAccelTop=0
+                    fForegroundMouseBase=0
+                    fForegroundMouseMult=0
+                    fXenonVertLookSpeed=1200.0000
+                    fXenonHorizLookSpeed=1500.0000
 
-[Display]
-bFull Screen=1
+                    [Display]
+                    bFull Screen=1
 
-[General]
-bPreemptivelyUnloadCells=1
-bUseThreadedAI=1
-iNumHWThreads=2
-SCharGenQuest=001FFFF8
-SIntroMovie=
+                    [General]
+                    bPreemptivelyUnloadCells=1
+                    bUseThreadedAI=1
+                    iNumHWThreads=2
+                    SCharGenQuest=001FFFF8
+                    SIntroMovie=
 
-[Grass]
-fGrassStartFadeDistance=11200
+                    [Grass]
+                    fGrassStartFadeDistance=11200
 
-[Loading]
-fMainMenuBkgdUpdateInterval=60.0000
+                    [Loading]
+                    fMainMenuBkgdUpdateInterval=60.0000
 
-[SpeedTree]
-bForceFullLOD=1
+                    [SpeedTree]
+                    bForceFullLOD=1
 
-[TerrainManager]
-fBlockLoadDistance=300000.0000
-fBlockLoadDistanceLow=125000.0000
+                    [TerrainManager]
+                    fBlockLoadDistance=300000.0000
+                    fBlockLoadDistanceLow=125000.0000
 
-[Water]
-bUseWaterReflections=1
-bUseWaterRefractions=1
-bUseWaterDepth=1
-bUseWaterLOD=1
-bReflectExplosions=0
-bAutoWaterSilhouetteReflections=0
-bUseWaterHiRes=1
-bForceHighDetailReflections=1
-bUseWaterDisplacements=1
-</textarea>
+                    [Water]
+                    bUseWaterReflections=1
+                    bUseWaterRefractions=1
+                    bUseWaterDepth=1
+                    bUseWaterLOD=1
+                    bReflectExplosions=0
+                    bAutoWaterSilhouetteReflections=0
+                    bUseWaterHiRes=1
+                    bForceHighDetailReflections=1
+                    bUseWaterDisplacements=1
+                </textarea>
             </ul>
         </ol>
         <h3>Notes</h3>
@@ -250,29 +249,23 @@ bUseWaterDisplacements=1
         </blockquote>
         <p>
             When the guide says to install a mod, it will be formatted as follows: <strong>Main File - Example Mod
-        1.5</strong>. This is referring to the mod's category on Nexus, the file name, and the file version.
-            <br> <br>
+            1.5</strong>. This is referring to the mod's category on Nexus, the file name, and the file version.
+            <br><br>
             <img src="./img/download%20example.png" alt="download example"> <br> <br> Unless instructed otherwise, simply download the listed file using the <strong>Mod Manager Download</strong> button and install it normally through MO2. If you do not
             know how to install mods through MO2, please watch the video linked above. Sometimes, a mod will not have a <strong>Mod Manager Download</strong>, or will be hosted on a site other than Nexus. If that is the case, do the following:
         </p>
         <ol>
-            <li>Click the <strong>Manual Download</strong> button (or whatever the download button is for the respective site)
-            </li>
+            <li>Click the <strong>Manual Download</strong> button (or whatever the download button is for the respective site)</li>
             <li>Once the download has finished, click the <img src="./img/mo2%20archive.png" alt="mo2 archive button"> button at the top of MO2</li>
             <li>From the new window, navigate to where the file was downloaded to and double-click it</li>
             <li>Finish the install normally</li>
         </ol>
         <p>
-            When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer 2 with the options <strong>Merge</strong>, <strong>Replace</strong>, and <strong>Rename</strong>. You should select the <strong>Rename</strong>            option and rename the mod to its respective file name. This will make MO2 install them as separate files for easier management. If you are updating from an old version of a mod, you should select <strong>Replace</strong>. This will delete
-            all the files from the old version of the mod and replace them,with the ones from the new version. This is the only time you should use the <strong>Replace</strong> option, otherwise always use
-            <strong>Rename</strong>.
+            When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer 2 with the options <strong>Merge</strong>, <strong>Replace</strong>, and <strong>Rename</strong>. You should select the <strong>Rename</strong> option and rename the mod to its respective file name. This will make MO2 install them as separate files for easier management. If you are updating from an old version of a mod, you should select <strong>Replace</strong>. This will delete all the files from the old version of the mod and replace them,with the ones from the new version. This is the only time you should use the <strong>Replace</strong> option, otherwise always use <strong>Rename</strong>.
         </p>
-        <br>
-        <p>
-            If at any point during mod installation you get a message called <strong>Extract BSA</strong>, select
+            <blockquote class="blue"><i class="fas fa-info-circle"></i> If at any point during mod installation you get a message called <strong>Extract BSA</strong>, select
             <strong>No</strong>
-        </p>
-
+            </blockquote>
     </div>
 
     <!-- QOLORE CONTENT ENDS HERE -->
@@ -280,12 +273,10 @@ bUseWaterDisplacements=1
     <span class="continue"><a href="./ttw.html">Continue to TTW Installation <i
         class="fas fa-angle-double-right"></i></a></span>
 
-
     <hr>
 
     <footer>
         Guide created by <a href="./contributors.html">WSG contributors</a>, do not reproduce without permission.
     </footer>
 </body>
-
 </html>
