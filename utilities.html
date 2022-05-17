@@ -72,19 +72,20 @@ SOFTWARE.
         <li>Right-click on <strong>FNVpatch.exe</strong> and select <strong>Run as administrator</strong></li>
         <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b></li>
         <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder</li>
-        <li>Create an empty mod in MO2, name it "4GB Aware Executable"</li>
-        <li>CTRL+double click the mod, here create a new folder named "Root"</li>
+        <li>In MO2's left pane, right click and select <strong>All Mods &nbsp; <i class="fas fa-caret-right"></i> &nbsp; Create empty mod above</strong>, naming it "4GB Patched EXE"</li>
+        <li>Activate the <b>4GB Patched EXE</b> mod you just made then CTRL + double-click it</li>
+        <li>In the opened folder, create a new folder named "Root"</li>
         <img src="./img/4gbroot.png" alt="4GB Patcher Root Folder">
-        <li>Go back in your game root folder, cut <b>FalloutNV.exe</b> and then paste it inside the Root folder you created in the previous step</li>
+        <li>Back in the game's <strong>Root</strong> folder, cut <b>FalloutNV.exe</b> and then paste it inside the Root folder you created in the previous step</li>
         <li>Still in your game root folder, rename <b>FalloutNV_backup.exe</b> back into <b>FalloutNV.exe</b>.</li>
     </ol>
     <a target="_blank" href="https://github.com/xNVSE/NVSE/releases/tag/6.2.7">xNVSE</a>
     <ol>
         <li>Download the latest release archive</li>
-        <li>Create an empty mod in MO2, name it "xNVSE"</li>
+        <li>Create another empty mod in MO2 like you did for the previous mod and this time name it "xNVSE"</li>
         <li>CTRL+double click the mod, here create a new folder named "Root"</li>
         <blockquote class="blue">
-            <i class="fas fa-info-circle"></i>It's a good idea to append the xNVSE version number after the mod name, for example xNVSE 6.2.7.
+            <i class="fas fa-info-circle"></i> It's a good idea to append the xNVSE version number after the mod name, for example xNVSE 6.2.7.
         </blockquote>
         <li>Open the xNVSE archive in 7zip and drag the highlighted files into the Root folder</li>
         <img src="./img/xnvseroot.png" alt="xNVSE Root Folder">
@@ -104,7 +105,7 @@ SOFTWARE.
         <li>Back in the downloaded archive, open the folder's which name corresponds to the version that the command prompt told you to use</li>
         <li>From that folder, extract the <strong>d3dx9_38.dll</strong> to the <strong>Root</strong> folder of the NVHR mod you created in MO2</li>
     </ol>
-    
+
     <br>
 
     <table>
@@ -113,7 +114,7 @@ SOFTWARE.
             <th>Description</th>
             <th>Instructions</th>
         </tr>
-        <table>
+
         <tr>
             <td><a target="_blank" href="https://www.nexusmods.com/newvegas/mods/58277">JIP LN NVSE</a></td>
             <td>An extension of NVSE adding 1000+ new functions, numerous engine bug fixes/tweaks, and restoreing several broken game features </td>
@@ -200,6 +201,8 @@ SOFTWARE.
         <strong>Data</strong> folder rather than through MO2. The files from the mods should end up in <code>Fallout New Vegas\Data\NVSE\plugins</code>).
     </blockquote>
     <ol class="standard_ol">
+        <li>Build the root by clicking the puzzle piece icon and selecting <strong>Root Builder &nbsp; <i class="fas fa-caret-right"></i> &nbsp;</strong><i style="color:limegreen" class="fas fa-plus"></i> Build</li>
+        <img src="./img/build.png">
         <li>Launch the game using the <strong>Tale of Two Wastelands</strong> option in MO2 (NOT the <strong>NVSE</strong> option)
         </li>
         <li>Once the game has reached the main menu, hit the <code>~</code> key (above the tab key) to open the console</li>
@@ -233,7 +236,8 @@ SOFTWARE.
         <ul>
             <li>If not, then <a href="./utilities.html">Mod Limit Fix</a> is installed incorrectly</li>
         </ul>
-    </ol>
+        <li>Clear the root using the same menu you used to build it</li>
+        <img src="./img/clear.png"> </ol>
 
     <blockquote class="red"><i class="fas fa-exclamation-triangle"></i> Before clicking the following continue link, you should make sure you passed all of the preceding tests! The Utilities in this section of the guide are required for optimal performance and stability.</blockquote>
     <span class="continue">
@@ -243,4 +247,5 @@ SOFTWARE.
     <hr>
     <footer> Guide created by <a href="./contributors.html">WSG contributors</a>, do not reproduce without permission. </footer>
 </body>
+
 </html>
