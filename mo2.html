@@ -83,6 +83,7 @@ SOFTWARE.
 -->
     <div>
         <p>In this step, we will install and configure Mod Organizer 2, the best mod manager for any Bethesda game.</p>
+
         <h3>Installing Mod Organizer 2</h3>
         <blockquote class="red"><i class="fas fa-exclamation-triangle"></i> If you are about to ignore this section or do it differently because you already have Mod Organizer 2 installed for a different game somewhere else, do not get confused. Download and run the installer
             again anyway - the following steps apply to absolutely <strong>everyone</strong>. While it may seem counter-intuitive, you need to <strong>download the installer again</strong> and make a new <strong>portable instance</strong>. This is the
@@ -94,16 +95,7 @@ SOFTWARE.
             <li>Although it doesn't technically have to be installed on the same drive as the game, it is still recommended to install on an SSD if possible</li>
             <li>Click <strong>Next</strong> until the installer finishes</li>
         </ol>
-        <h3>Root Builder Setup</h3>
-        If you want to know how Root Builder works, read <a href="./rootbuilder.html">here.</a> Steps will be provided anyway in case you only want to follow along without understanding the plugin.
-        <ol>
-            <li>Download the <strong>Root Builder</strong> main file from <a href="https://www.nexusmods.com/skyrimspecialedition/mods/31720?tab=files" target="_blank">here</a></li>
-            <li>Extract the archive and cut the "rootbuilder" folder that was inside it</li>
-            <li>Go to the <strong>MO2 installation folder</strong>, which is in "C:\Modding" by default</li>
-            <li>Open the "plugins" folder and paste the "rootbuilder" folder you previously cut</li>
-            <img src="./img/rootbuilderlocation.png" alt="Root Builder Location">
-        </ol>
-        
+
         <h3>Initial Setup</h3>
         <ol>
             <li>Run <strong>ModOrganizer.exe</strong></li>
@@ -128,6 +120,17 @@ SOFTWARE.
                 <li>This pop-up will not show up if you have already registered a different instance of MO2</li>
             </ul>
         </ol>
+
+        <h3>Root Builder Setup</h3>
+        If you want to know how Root Builder works, read <a href="./rootbuilder.html">here.</a> Steps will be provided anyway in case you only want to follow along without understanding the plugin.
+        <ol>
+            <li>Download the <strong>Root Builder</strong> main file from <a href="https://www.nexusmods.com/skyrimspecialedition/mods/31720?tab=files" target="_blank">here</a></li>
+            <li>Once the download has finished, click the <img src="./img/mo2 folders.png" alt="mo2 folders"> button at the top of MO2 and select <strong>Open MO2 Plugins Folder</strong></li>
+            <li>Place the <strong>rootbuilder</strong> folder from the extracted archive into opened folder</li>
+            <img src="./img/rootbuilderlocation.png" alt="Root Builder Location">
+            <li><strong>Close Mod Organizer 2</strong> and open it again so the plugin can be detected before moving onto the next section</li>
+        </ol>
+
         <h3>Configuring Settings</h3>
         <ol>
             <li>If there is a plugin called <strong>FalloutNV_lang.esp</strong> in the right pane of Mod Organizer 2, navigate to the game's <strong>Data</strong> folder and delete it</li>
@@ -145,8 +148,8 @@ SOFTWARE.
             </li>
             <li>In the <strong>Theme</strong> tab, you can select a different style from the drop-down menu at the top</li>
             <ul>
-                <li>The Many: I use the <strong>dracula</strong> theme.</li>
-                <li>Audixas: I use <strong>vs15 Dark-Green</strong> for TTW.</li>
+                <li>The Many: I use the <strong>dracula</strong> theme</li>
+                <li>Audixas: I use <strong>vs15 Dark-Green</strong> for TTW</li>
                 <li>VishVadeva50: I use <strong>1809 Dark Mode</strong></li>
             </ul>
             <li>In the <strong>Nexus</strong> tab, select <strong>Connect to Nexus</strong></li>
@@ -158,7 +161,7 @@ SOFTWARE.
             <li>MO2 will open your browser and prompt you to authorize the connection</li>
             <li>Once you authorize it, you can close out of your browser and of the MO2 settings</li>
             <li>Allow MO2 to restart if it asks</li>
-            <li>In the <strong>Plugins</strong> tab, disable "autobuild"</li>
+            <li>In the <strong>Plugins</strong> tab, select <b>RootBuilder</b> in the left pane, then set "autobuild" to false in the dropdown on the right</li>
             <img src="./img/autobuild.png" alt="disable autobuild">
             <blockquote>
                 If at any point you get a pop-up called <strong>INI file is read-only</strong>, select <strong>Remember my choice</strong> from the drop-down at the bottom then click <strong>Clear the read-only flag</strong>
@@ -184,56 +187,56 @@ SOFTWARE.
             <li>Paste in the following:</li>
             <ul>
                 <textarea readonly="readonly" style="height: 60rem" onclick="this.focus();this.select()">
-                    [Audio]
-                    bUseAudioDebugInformation=0
-                    iAudioCacheSize=8192
-                    iMaxSizeForCachedSound=1024
+[Audio]
+bUseAudioDebugInformation=0
+iAudioCacheSize=8192
+iMaxSizeForCachedSound=1024
 
-                    [BackgroundLoad]
-                    bBackgroundCellLoads=1
-                    bSelectivePurgeUnusedOnFastTravel=1
+[BackgroundLoad]
+bBackgroundCellLoads=1
+bSelectivePurgeUnusedOnFastTravel=1
 
-                    [Controls]
-                    fForegroundMouseAccelBase=0
-                    fForegroundMouseAccelTop=0
-                    fForegroundMouseBase=0
-                    fForegroundMouseMult=0
-                    fXenonVertLookSpeed=1200.0000
-                    fXenonHorizLookSpeed=1500.0000
+[Controls]
+fForegroundMouseAccelBase=0
+fForegroundMouseAccelTop=0
+fForegroundMouseBase=0
+fForegroundMouseMult=0
+fXenonVertLookSpeed=1200.0000
+fXenonHorizLookSpeed=1500.0000
 
-                    [Display]
-                    bFull Screen=1
+[Display]
+bFull Screen=1
 
-                    [General]
-                    bPreemptivelyUnloadCells=1
-                    bUseThreadedAI=1
-                    iNumHWThreads=2
-                    SCharGenQuest=001FFFF8
-                    SIntroMovie=
+[General]
+bPreemptivelyUnloadCells=1
+bUseThreadedAI=1
+iNumHWThreads=2
+SCharGenQuest=001FFFF8
+SIntroMovie=
 
-                    [Grass]
-                    fGrassStartFadeDistance=11200
+[Grass]
+fGrassStartFadeDistance=11200
 
-                    [Loading]
-                    fMainMenuBkgdUpdateInterval=60.0000
+[Loading]
+fMainMenuBkgdUpdateInterval=60.0000
 
-                    [SpeedTree]
-                    bForceFullLOD=1
+[SpeedTree]
+bForceFullLOD=1
 
-                    [TerrainManager]
-                    fBlockLoadDistance=300000.0000
-                    fBlockLoadDistanceLow=125000.0000
+[TerrainManager]
+fBlockLoadDistance=300000.0000
+fBlockLoadDistanceLow=125000.0000
 
-                    [Water]
-                    bUseWaterReflections=1
-                    bUseWaterRefractions=1
-                    bUseWaterDepth=1
-                    bUseWaterLOD=1
-                    bReflectExplosions=0
-                    bAutoWaterSilhouetteReflections=0
-                    bUseWaterHiRes=1
-                    bForceHighDetailReflections=1
-                    bUseWaterDisplacements=1
+[Water]
+bUseWaterReflections=1
+bUseWaterRefractions=1
+bUseWaterDepth=1
+bUseWaterLOD=1
+bReflectExplosions=0
+bAutoWaterSilhouetteReflections=0
+bUseWaterHiRes=1
+bForceHighDetailReflections=1
+bUseWaterDisplacements=1
                 </textarea>
             </ul>
         </ol>
@@ -261,11 +264,12 @@ SOFTWARE.
             <li>Finish the install normally</li>
         </ol>
         <p>
-            When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer 2 with the options <strong>Merge</strong>, <strong>Replace</strong>, and <strong>Rename</strong>. You should select the <strong>Rename</strong> option and rename the mod to its respective file name. This will make MO2 install them as separate files for easier management. If you are updating from an old version of a mod, you should select <strong>Replace</strong>. This will delete all the files from the old version of the mod and replace them,with the ones from the new version. This is the only time you should use the <strong>Replace</strong> option, otherwise always use <strong>Rename</strong>.
+            When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer 2 with the options <strong>Merge</strong>, <strong>Replace</strong>, and <strong>Rename</strong>. You should select the <strong>Rename</strong>            option and rename the mod to its respective file name. This will make MO2 install them as separate files for easier management. If you are updating from an old version of a mod, you should select <strong>Replace</strong>. This will delete
+            all the files from the old version of the mod and replace them,with the ones from the new version. This is the only time you should use the <strong>Replace</strong> option, otherwise always use <strong>Rename</strong>.
         </p>
-            <blockquote class="blue"><i class="fas fa-info-circle"></i> If at any point during mod installation you get a message called <strong>Extract BSA</strong>, select
+        <blockquote class="blue"><i class="fas fa-info-circle"></i> If at any point during mod installation you get a message called <strong>Extract BSA</strong>, select
             <strong>No</strong>
-            </blockquote>
+        </blockquote>
     </div>
 
     <!-- QOLORE CONTENT ENDS HERE -->
@@ -279,4 +283,5 @@ SOFTWARE.
         Guide created by <a href="./contributors.html">WSG contributors</a>, do not reproduce without permission.
     </footer>
 </body>
+
 </html>
