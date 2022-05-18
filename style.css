@@ -227,16 +227,16 @@ input[type="reset"],
 input[type="button"] {
     display: inline-block;
     font-family: Tahoma;
-    padding: 3px 25px;
+    padding: 3px 15px;
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
-    background-color: #f7f8f9;
+    background-color: #3c3f41;
     color: #120c0e;
     border-radius: 4px;
-    border: 1px solid #e3f6fc;
+    border: 1px solid #5f6161;
     cursor: pointer;
     box-sizing: border-box;
 }
@@ -260,8 +260,8 @@ input[type="reset"]:focus:enabled,
 input[type="reset"]:hover:enabled,
 input[type="button"]:focus:enabled,
 input[type="button"]:hover:enabled {
-    background-color: #cccccc;
-    border-color: #888888;
+    background-color: #575a5d;
+    border-color: #5f6161;
     color: #120c0e;
     outline: 0;
 }

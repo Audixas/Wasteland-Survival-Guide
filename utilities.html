@@ -72,7 +72,7 @@ SOFTWARE.
         <li>Right-click on <strong>FNVpatch.exe</strong> and select <strong>Run as administrator</strong></li>
         <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b></li>
         <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder</li>
-        <li>In MO2's left pane, right click and select <strong>All Mods &nbsp; <i class="fas fa-caret-right"></i> &nbsp; Create empty mod above</strong>, naming it "4GB Patched EXE"</li>
+        <li>In MO2, click the <button><img src="./img/mo2%20settings%20small.png"> &nbsp;<i style="color:#bbbbbb" class="fas fa-caret-down"></i></button> icon and select <strong>Create empty mod</strong>; name it "4GB Patched EXE"</li>
         <li>Activate the <b>4GB Patched EXE</b> mod you just made then CTRL + double-click it</li>
         <li>In the opened folder, create a new folder named "Root"</li>
         <img src="./img/4gbroot.png" alt="4GB Patcher Root Folder">
@@ -82,12 +82,12 @@ SOFTWARE.
     <a target="_blank" href="https://github.com/xNVSE/NVSE/releases/tag/6.2.7">xNVSE</a>
     <ol>
         <li>Download the latest release archive</li>
-        <li>Create another empty mod in MO2 like you did for the previous mod and this time name it "xNVSE"</li>
-        <li>CTRL+double click the mod, here create a new folder named "Root"</li>
+        <li>In MO2, click the <button><img src="./img/mo2%20settings%20small.png"> &nbsp;<i style="color:#bbbbbb" class="fas fa-caret-down"></i></button> icon and select <strong>Create empty mod</strong>; name it "xNVSE"</li>
         <blockquote class="blue">
             <i class="fas fa-info-circle"></i> It's a good idea to append the xNVSE version number after the mod name, for example xNVSE 6.2.7.
         </blockquote>
-        <li>Open the xNVSE archive in 7zip and drag the highlighted files into the Root folder</li>
+        <li>CTRL+double click the mod and in the opened folder, create a new folder named "Root"</li>
+        <li>Open the downloaded xNVSE archive in 7zip and drag the highlighted files into the Root folder</li>
         <img src="./img/xnvseroot.png" alt="xNVSE Root Folder">
         <li>Open the Data folder inside the xNVSE archive and drag the NVSE folder next to Root</li>
         <img src="./img/xnvsenvsefolder.png" alt="xNVSE NVSE Folder">
@@ -95,14 +95,14 @@ SOFTWARE.
     <a target="_blank" href="https://www.nexusmods.com/newvegas/mods/69779">New Vegas Heap Replacer</a>
     <ol>
         <li>Download the <strong>Main File - NVHR</strong> using the <strong>Manual Download button</strong></li>
-        <li>Create an empty mod in MO2, name it "NVHR"</li>
+        <li>In MO2, click the <button><img src="./img/mo2%20settings%20small.png"> &nbsp;<i style="color:#bbbbbb" class="fas fa-caret-down"></i></button> icon and select <strong>Create empty mod</strong>; name it "Heap Replacer"</li>
         <li>From the downloaded archive, run the <strong>cpu_info.exe</strong></li>
         <li>A command prompt will tell you which version of the mod to use</li>
         <img src="./img/nvhr.png" alt="NVHR AVX Version">
         <blockquote class="blockquote">
             Pay attention to the line that says <b>=&gt; Use &lt;= </b>. For me it says <strong>AVX2</strong>, but it may be different for you.
         </blockquote>
-        <li>Back in the downloaded archive, open the folder's which name corresponds to the version that the command prompt told you to use</li>
+        <li>Back in the downloaded archive, open the corresponding folder for the version that was specified in the command prompt</li>
         <li>From that folder, extract the <strong>d3dx9_38.dll</strong> to the <strong>Root</strong> folder of the NVHR mod you created in MO2</li>
     </ol>
 
@@ -196,10 +196,11 @@ SOFTWARE.
     <br>
 
     <h3><i class="fas fa-clipboard-check"></i> Testing Utilities</h3>
-    <blockquote class="blue"><i class="fas fa-info-circle"></i> In some rare cases, Mod Organizer 2 has issues handling .DLL files and they won't load in-game. If you can not get any of the mods in this section to work per the following instructions, then you should try installing the mods directly into the game's <strong>Data</strong> folder rather than through MO2. The files from the mods should end up in <code>Fallout New Vegas\Data\NVSE\plugins</code>.
+    <blockquote class="blue"><i class="fas fa-info-circle"></i> In some rare cases, Mod Organizer 2 has issues handling .DLL files and they won't load in-game. If you can not get any of the mods in this section to work per the following instructions, then you should try installing
+        the mods directly into the game's <strong>Data</strong> folder rather than through MO2. The files from the mods should end up in <code>Fallout New Vegas\Data\NVSE\plugins</code>.
     </blockquote>
     <ol class="standard_ol">
-        <li>Build the root by clicking the puzzle piece icon and selecting <strong>Root Builder &nbsp; <i class="fas fa-caret-right"></i> &nbsp;</strong><i style="color:limegreen" class="fas fa-plus"></i> Build</li>
+        <li>Build the root by clicking the <img src="./img/mo2 ini.png"> icon and selecting <strong>Root Builder &nbsp; <i class="fas fa-caret-right"></i> &nbsp;</strong><i style="color:limegreen" class="fas fa-plus"></i> Build</li>
         <img src="./img/build.png">
         <li>Launch the game using the <strong>Tale of Two Wastelands</strong> option in MO2 (NOT the <strong>NVSE</strong> option)
         </li>
