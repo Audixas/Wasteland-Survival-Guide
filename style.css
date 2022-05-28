@@ -262,7 +262,7 @@ input[type="button"]:focus:enabled,
 input[type="button"]:hover:enabled {
     background-color: #575a5d;
     border-color: #5f6161;
-    color: #120c0e;
+    color: #e4e4e4;
     outline: 0;
 }
 
