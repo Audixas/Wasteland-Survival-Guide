@@ -37,7 +37,7 @@ SOFTWARE.
         <a href="./mo2.html">MO2 Setup</a>
         <a href="./ttw.html">TTW Setup</a>
         <a href="./utilities.html" class="active">Utilities</a>
-        <a href="./bugfix.html">Bugs/QoL</a>
+
         <a href="./ui.html">UI/HUD</a>
         <a href="./gameplay.html">Gameplay</a>
         <a href="./content.html">Content</a>
@@ -64,7 +64,8 @@ SOFTWARE.
         are all hard requirements.
     </blockquote>
     <h3>Mods installed using Root Builder</h3>
-    <a target="_blank" href="https://www.nexusmods.com/newvegas/mods/62552">FNV 4GB Patcher</a>
+    <h4><a target="_blank" href="https://www.nexusmods.com/newvegas/mods/62552">FNV 4GB Patcher</a></h4>
+    <p>- Makes Fallout New Vegas 4GB aware and automatically loads NVSE if present</p>
     <ol>
         <li>Download the <strong>Main File - 4GB Patcher</strong> using the <strong>Manual Download</strong> option</li>
         <li>From the downloaded archive, extract the <strong>.exe</strong> file to the game's <strong>Root</strong> folder </li>
@@ -78,7 +79,8 @@ SOFTWARE.
         <li>Back in the game's <strong>Root</strong> folder, <dfn style="text-decoration:underline dashed" title="CTRL + X on Windows">cut</dfn> <b>FalloutNV.exe</b> and then paste it inside the Root folder you created in the previous step</li>
         <li>Still in your game root folder, rename <b>FalloutNV_backup.exe</b> back into <b>FalloutNV.exe</b>.</li>
     </ol>
-    <a target="_blank" href="https://github.com/xNVSE/NVSE/releases/tag/6.2.7">xNVSE</a>
+    <h4><a target="_blank" href="https://github.com/xNVSE/NVSE/releases/tag/6.2.7">xNVSE</a></h4>
+    <p>- New Vegas Script Extender (xNVSE) expands the engine and scripting capabilities of Fallout New Vegas, fixing bugs and adding hundreds of new functions</p>
     <ol>
         <li>Download the latest release archive and install it normally through MO2</li>
         <blockquote class="blue"><i class="fas fa-info-circle"></i> If you don't know how to install a mod that isn't from Nexus, refer to the <strong>Mod Installation Advice</strong> at the end of the <a href="mo2.html">MO2</a> section of the guide
@@ -93,7 +95,8 @@ SOFTWARE.
         <img src="./img/xnvse valid.png" alt="xNVSE valid structure">
 
     </ol>
-    <a target="_blank" href="https://www.nexusmods.com/newvegas/mods/69779">New Vegas Heap Replacer</a>
+    <h4><a target="_blank" href="https://www.nexusmods.com/newvegas/mods/69779">New Vegas Heap Replacer</a></h4>
+    <p>- Replaces the in-game heap with a faster, more optimized version, reducing load times & stutter and slightly improving frame rate</p>
     <ol>
         <li><strong>Main File - NVHR</strong></li>
         <li>In the pop-up window, right click <strong>cpu_info.exe</strong> and click <b>Open</b> to be shown a command prompt:</li>
@@ -106,9 +109,24 @@ SOFTWARE.
         <li>Untick all the other files/folders & verify that your structure matches the image below (ignore the "does not look valid" message) and click <button>OK</button>, then <button>Ignore</button> if a warning appears</li>
         <img src="./img/nvhr install.png" alt="heap install">
     </ol>
-
+    <h4><a target="_blank" href="https://www.nexusmods.com/newvegas/mods/68976">Discord Rich Presence</a></h4>
+    <p>- Shows your character info & what you're doing in-game on your Discord profile</p>
+    <blockquote class="blue"><i class="fab fa-discord"></i> Obviously, if you don't use Discord or simply aren't interested then this particular mod can be skipped</blockquote>
+    <ol>
+        <li>Download the <strong>Main File - Discord Rich Presence</strong> using the manual download button and install it normally in MO2</li>
+        <blockquote class="blue"><i class="fas fa-info-circle"></i> If you don't know how to install a mod via the Manual Download button, refer to the <strong>Mod Installation Advice</strong> at the end of the <a href="mo2.html">MO2</a> section of the guide
+        </blockquote>
+        <li>Right click <b>&lt;data&gt;</b> and create a Root folder just like we did for the previous mods</li>
+        <img src="./img/drp1.png" alt="discord rich presence install pt1">
+        <li>Drag the <b>discord-rpc.dll</b> into that Root folder</li>
+        <img src="./img/drp2.png" alt="discord rich presence install pt2">
+        <li>Expand the tree view of the <b>Data</b> folder and drag the <b>nvse</b> folder within into the <b>&lt;data&gt;</b> heading</li>
+        <img src="./img/drp3.png" alt="discord rich presence install pt3">
+        <li>The frame and text should turn green; ensure you match with the image below before clicking <button>OK</button></li>
+        <img src="./img/drp4.png" alt="discord rich presence install pt4">
+    </ol>
     <br>
-
+    <h3>Mods installed using MO2</h3>
     <table>
         <tr>
             <th>Mod Name</th>
@@ -161,13 +179,11 @@ SOFTWARE.
                 <strong>Main File - Console Paste</strong>
             </td>
         </tr>
-
         <tr>
             <td><a target="_blank" href="https://www.nexusmods.com/newvegas/mods/70801">Improved Console (NVSE)</a></td>
             <td>Overcomes several limitations present in the vanilla console </td>
             <td><strong>Main File - Improved Console</strong></td>
         </tr>
-
         <tr>
             <td><a target="_blank" href="https://www.nexusmods.com/newvegas/mods/71336">kNVSE Animation Plugin</a></td>
             <td>Allows for custom animations to be loaded without overwriting, making it possible to use animations made specifically for certain weapons without affecting the others</td>
@@ -208,8 +224,6 @@ SOFTWARE.
             <td><strong>Main File - yGTM</strong></td>
         </tr>
     </table>
-
-    <br>
 
     <h3><i class="fas fa-clipboard-check"></i> Testing Utilities</h3>
     <blockquote class="blue"><i class="fas fa-info-circle"></i> In some rare cases, Mod Organizer 2 has issues handling .DLL files and they won't load in-game. If you can not get any of the mods in this section to work per the following instructions, then you should try installing
